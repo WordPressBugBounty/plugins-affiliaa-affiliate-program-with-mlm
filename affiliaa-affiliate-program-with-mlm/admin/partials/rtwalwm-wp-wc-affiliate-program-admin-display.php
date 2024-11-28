@@ -94,22 +94,22 @@
 	$rtwalwm_referral_noti = get_option( 'rtwwwap_referral_noti' );
 ?>
 
-<!-- <div class="rtw_popup">
-        <div class="rtw_card">
-            <div class="rtw_card_label">
-                <label>Limited time offer</label>
-            </div>
-            <div class="rtw_card_body">
-                <div class="rtw_close_popup">
-                  <div class="rtw_close_icon"></div>
-                </div>
-               
-            
-             
-				<a class="rtw_link" href="https://codecanyon.net/item/wordpress-woocommerce-affiliate-program/23580333" target="_blank"> <button class="rtwalwm_buy_now">Buy Now</button></a>
-            </div>
-        </div>
-    </div> -->
+<div class="rtw_popup">
+	<div class="rtw_card">
+		<div class="rtw_card_label">
+			<label>Cyber Week Sale</label>
+		</div>
+		<div class="rtw_card_body">
+			<div class="rtw_close_popup">
+				<div class="rtw_close_icon"></div>
+			</div>
+			
+		
+			
+			<a class="rtw_link" href="https://codecanyon.net/item/wordpress-woocommerce-affiliate-program/23580333" target="_blank"> <button class="rtwalwm_buy_now">Buy Now</button></a>
+		</div>
+	</div>
+</div>
 
 
 <div class="wrap rtwalwm">

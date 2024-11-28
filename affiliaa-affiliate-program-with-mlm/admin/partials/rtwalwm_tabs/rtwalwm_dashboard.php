@@ -18,9 +18,9 @@
 	$rtwalwm_pending_comm 		= $wpdb->get_var( $wpdb->prepare( "SELECT SUM(`amount`) FROM ".$wpdb->prefix."rtwwwap_referrals WHERE `status`=%d AND `type` != %d", 0, 3 ) );
 	$rtwalwm_approved_comm 		= $wpdb->get_var( $wpdb->prepare( "SELECT SUM(`amount`) FROM ".$wpdb->prefix."rtwwwap_referrals WHERE `status`=%d  AND `type` != %d", 1, 3 ) );
 	$rtwalwm_total_comm 		= $wpdb->get_var( $wpdb->prepare( "SELECT SUM(`amount`) FROM ".$wpdb->prefix."rtwwwap_referrals WHERE `status` != %d  AND `type` != %d", 3, 3 ) );
-	$rtwalwm_total_comm = isset($rtwalwm_total_comm) && !emtpy($rtwalwm_total_comm)? $rtwalwm_total_comm: 0;
-	$rtwalwm_approved_comm = isset($rtwalwm_approved_comm) && !emtpy($rtwalwm_approved_comm)? $rtwalwm_approved_comm: 0;
-	$rtwalwm_pending_comm = isset($rtwalwm_pending_comm) && !emtpy($rtwalwm_pending_comm)? $rtwalwm_pending_comm: 0;
+	$rtwalwm_total_comm = isset($rtwalwm_total_comm) && !empty($rtwalwm_total_comm)? $rtwalwm_total_comm: 0;
+	$rtwalwm_approved_comm = isset($rtwalwm_approved_comm) && !empty($rtwalwm_approved_comm)? $rtwalwm_approved_comm: 0;
+	$rtwalwm_pending_comm = isset($rtwalwm_pending_comm) && !empty($rtwalwm_pending_comm)? $rtwalwm_pending_comm: 0;
 
 	$rtwalwm_last_5 			= $wpdb->get_results( $wpdb->prepare( "SELECT * FROM ".$wpdb->prefix."rtwwwap_referrals WHERE `type` != %d ORDER BY `date` DESC LIMIT %d", 3, 5 ), ARRAY_A );
 	$rtwalwm_top_5 				= $wpdb->get_results( $wpdb->prepare( "SELECT SUM( `amount` ) as amount, COUNT( `id` ) as count, `aff_id` FROM ".$wpdb->prefix."rtwwwap_referrals WHERE `status` != %d AND `type` != %d GROUP BY `aff_id` ORDER BY amount DESC LIMIT %d", 3, 3, 5 ), ARRAY_A );

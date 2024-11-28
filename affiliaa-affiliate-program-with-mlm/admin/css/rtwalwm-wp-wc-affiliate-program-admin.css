@@ -1441,7 +1441,8 @@ width:30%;
 *,::before,::after{
     box-sizing: border-box;
 }
- /* .rtw_popup{
+/* Popup */
+ .rtw_popup{
     background: rgba(0,0,0,0.4);
     position: fixed;
     left: 0;
@@ -1479,7 +1480,7 @@ width:30%;
    position: relative;
    height: 400px;
     width: 560px;
-    background: url(../../assets/images/affiliate_offer.jpg) no-repeat center;
+    background: url(../../assets/images/Affiliate_sale_offer.jpg) no-repeat center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -1585,8 +1586,8 @@ width: 100%;
     font-size: 30px;
     color: white;
     cursor: pointer;
-} */
-/* .price {
+} 
+.price {
     background: #ffc107;
     width: auto;
     padding: 10px;
@@ -1606,7 +1607,9 @@ width: 100%;
     margin-left: 5px;
     color: black;
     font-size: 35px;
-} */
+}
+
+/* popup ends */
 .bottom_text {
     font-size: 20px;
     font-style: italic;

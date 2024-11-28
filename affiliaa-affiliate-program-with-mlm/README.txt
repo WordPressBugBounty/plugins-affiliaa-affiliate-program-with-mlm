@@ -3,9 +3,9 @@ Contributors: redefiningtheweb
 Donate link: https://redefiningtheweb.com
 Tags: affiliate, affiliate marketing, affiliates, affiliate program, woocommerce
 Requires at least: 3.0.1
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Requires PHP: 5.6.2
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -149,6 +149,11 @@ In the search field type "Affilia Lite - Affiliate Program With MLM " and click 
 The manual installation method involves downloading our Affilia Lite - Affiliate Program With MLM Plugin and upload it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
 == Changelog ==
+
+= 3.2.2 - 2024-11-28 =
+* Bug fixed in the dashboard tab of the admin panel
+* Minor bug fixes
+
 = 3.2.1 - 2024-10-07 =
 * Compatibility check with latest version of PHP, WordPress and WooCommerce
 * Minor bug fixes

@@ -16,16 +16,16 @@
  * Plugin Name:       Affiliaa - Affiliate Program with MLM
  * Plugin URI:        https://redefiningtheweb.com/product/wordpress-woocommerce-affiliate-program/1117/
  * Description:       This plugin helps you to turn your E-commerce Site into an Affiliate System, which eventually boost your overall Sales.
- * Version:           3.2.1
+ * Version:           3.2.2
  * Author:            RedefiningTheWeb
  * Author URI:        http://www.redefiningtheweb.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       rtwalwm-wp-wc-affiliate-program
  * Domain Path:       /languages
- * Tested up to:	  6.6.2
+ * Tested up to:	  6.7.1
  * WC requires at least: 4.2.0
- * WC tested up to: 9.3.3
+ * WC tested up to: 9.4.2
  */
 
 // If this file is called directly, abort.
@@ -37,7 +37,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'RTWALWM_PLUGIN_NAME_VERSION', '3.2.1' );
+define( 'RTWALWM_PLUGIN_NAME_VERSION', '3.2.2' );
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-wp-wc-affiliate-program-activator.php
