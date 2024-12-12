@@ -5,7 +5,7 @@
 		<table class="rtwalwm-table form-table">
 			<tbody>
 				<tr>
-					<th><?php esc_html_e( 'Level', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+					<th><?php esc_html_e( 'Level', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 					<td class="tr2">
 						<input class="rtwalwm_level_name" type="text" required="required" name="rtwalwm_levels_settings_opt[level_name]" value="" disabled/>
 						<input type="hidden" name="rtwalwm_levels_settings_opt[rtwalwm_level]" value="add" />
@@ -13,16 +13,16 @@
 				</tr>
 				<tr>
 					<th>
-						<?php esc_html_e( 'Commission', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<?php esc_html_e( 'Commission', 'affiliaa-affiliate-program-with-mlm' ); ?>
 					</th>
 					<td class="tr2">
 						<table>
 							<thead>
 								<th>
-									<?php esc_html_e( 'Type', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+									<?php esc_html_e( 'Type', 'affiliaa-affiliate-program-with-mlm' ); ?>
 								</th>
 								<th>
-									<?php esc_html_e( 'Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+									<?php esc_html_e( 'Amount', 'affiliaa-affiliate-program-with-mlm' ); ?>
 								</th>
 							</thead>
 							<tbody class="rtwalwm_tbody">
@@ -31,10 +31,10 @@
 										<select class="rtwalwm_select2_level" id="" name="rtwalwm_levels_settings_opt[level_commission_type]" >
 											
 											<option value="0" disabled>
-												<?php esc_html_e( 'Percentage', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Percentage', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 											<option value="1" disabled>
-												<?php esc_html_e( 'Fixed', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Fixed', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 										</select>
 									</td>
@@ -48,16 +48,16 @@
 				</tr>
 				<tr>
 					<th>
-						<?php esc_html_e( 'To Reach', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<?php esc_html_e( 'To Reach', 'affiliaa-affiliate-program-with-mlm' ); ?>
 					</th>
 					<td class="tr2">
 						<table>
 							<thead>
 								<th>
-									<?php esc_html_e( 'Criteria', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+									<?php esc_html_e( 'Criteria', 'affiliaa-affiliate-program-with-mlm' ); ?>
 								</th>
 								<th>
-									<?php esc_html_e( 'Value', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+									<?php esc_html_e( 'Value', 'affiliaa-affiliate-program-with-mlm' ); ?>
 								</th>
 							</thead>
 							<tbody class="rtwalwm_tbody">
@@ -65,13 +65,13 @@
 									<td>
 										<select class="rtwalwm_select2_level_criteria" id="" name="rtwalwm_levels_settings_opt[level_criteria_type]" >
 											<optiondisabled>
-												<?php esc_html_e( 'Become Affiliate', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Become Affiliate', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 											<option disabled>
-												<?php esc_html_e( 'No. of Referrals', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'No. of Referrals', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 											<option  disabled>
-												<?php esc_html_e( 'Total sale amount', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Total sale amount', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 										</select>
 									</td>

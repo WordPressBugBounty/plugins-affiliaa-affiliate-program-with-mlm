@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Affilia - Affiliate Program with MLM\n"
-"POT-Creation-Date: 2024-10-07 13:48+0530\n"
+"POT-Creation-Date: 2024-12-12 14:31+0530\n"
 "PO-Revision-Date: 2019-04-20 16:13+0530\n"
 "Last-Translator: \n"
 "Language-Team: RedefiningTheWeb <developer@redefiningtheweb.com>\n"
@@ -44,7 +44,7 @@ msgid "Levels"
 msgstr ""
 
 #: admin/partials/rtwalwm-wp-wc-affiliate-program-admin-display.php:150
-#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:153
+#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:155
 #: public/templates/rtwalwm_affiliate_body.php:69
 msgid "Referrals"
 msgstr ""
@@ -164,7 +164,7 @@ msgstr ""
 #: admin/partials/rtwalwm_tabs/rtwalwm_levels.php:25
 #: admin/partials/rtwalwm_tabs/rtwalwm_levels.php:42
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:45
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:223
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:225
 msgid "Actions"
 msgstr ""
 
@@ -563,9 +563,9 @@ msgstr ""
 #: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:10
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:96
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:145
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:440
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:743
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:990
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:456
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:759
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1023
 #: public/templates/rtwalwm_affiliate_body.php:9
 msgid "&#36;"
 msgstr ""
@@ -618,19 +618,19 @@ msgstr ""
 msgid "Last 5 Referrals"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:123
+#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:125
 msgid "for"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:123
+#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:125
 msgid "on"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:136
+#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:138
 msgid "Top 5 affiliates"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:153
+#: admin/partials/rtwalwm_tabs/rtwalwm_dashboard.php:155
 msgid "Total Amount"
 msgstr ""
 
@@ -1125,8 +1125,17 @@ msgstr ""
 msgid "Date "
 msgstr ""
 
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:737
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:743
+msgid "1"
+msgstr ""
+
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:740
 msgid "Bronze"
+msgstr ""
+
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:746
+msgid "10"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:749
@@ -1145,16 +1154,40 @@ msgstr ""
 msgid "24-11-22"
 msgstr ""
 
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:759
+msgid "2"
+msgstr ""
+
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:762
 msgid "Silver"
+msgstr ""
+
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:765
+msgid "4"
+msgstr ""
+
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:768
+msgid "15"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:775
 msgid "26-11-22"
 msgstr ""
 
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:781
+msgid "3"
+msgstr ""
+
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:784
 msgid "Gold"
+msgstr ""
+
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:787
+msgid "5"
+msgstr ""
+
+#: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:790
+msgid "24"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_extra_features.php:797
@@ -1324,9 +1357,9 @@ msgstr ""
 #: admin/partials/rtwalwm_tabs/rtwalwm_levels_add_edit.php:25
 #: admin/partials/rtwalwm_tabs/rtwalwm_mlm.php:97
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:30
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:160
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:161
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:42
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:220
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:222
 #: public/templates/rtwalwm_affiliate_body.php:79
 msgid "Amount"
 msgstr ""
@@ -1340,13 +1373,13 @@ msgid "Value"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_levels_add_edit.php:68
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:420
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:421
 msgid "Become Affiliate"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_levels_add_edit.php:71
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:29
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:159
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:160
 msgid "No. of Referrals"
 msgstr ""
 
@@ -1436,51 +1469,51 @@ msgid "Pay marked Stripe Affiliates"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:27
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:157
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:158
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:30
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:210
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:212
 msgid "User ID"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:28
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:158
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:159
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:31
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:211
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:326
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:164
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:213
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:327
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:166
 msgid "Affiliate"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:31
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:161
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:162
 msgid "Last Referral"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:32
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:162
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:163
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:44
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:222
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:224
 #: public/templates/rtwalwm_affiliate_body.php:90
 msgid "Status"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:119
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:120
 msgid "Paypal"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:123
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:124
 msgid "Stripe"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:127
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:128
 msgid "Bank Details"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:137
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:138
 msgid "Pay"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:144
+#: admin/partials/rtwalwm_tabs/rtwalwm_payouts.php:145
 msgid "No payment method defined"
 msgstr ""
 
@@ -1493,17 +1526,17 @@ msgid "Reject all marked Referrals"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:32
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:212
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:214
 msgid "Reference"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:36
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:216
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:218
 msgid "Order Status"
 msgstr ""
 
 #: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:43
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:221
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:223
 #: public/templates/rtwalwm_affiliate_body.php:82
 msgid "Date"
 msgstr ""
@@ -1520,257 +1553,257 @@ msgstr ""
 msgid "Share Bonus"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:163
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:165
 msgid "Approve"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:166
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:168
 msgid "Reject"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:173
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:723
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:791
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:175
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:724
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:792
 msgid "Approved"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:180
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:182
 msgid "Paid"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:187
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:763
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:189
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:764
 msgid "Rejected"
 msgstr ""
 
-#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:195
+#: admin/partials/rtwalwm_tabs/rtwalwm_referrals.php:197
 msgid "Capped"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:71
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:72
 msgid "Invalid file name."
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:77
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:78
 msgid "File does not exist or invalid file path."
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:189
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:116
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:190
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:118
 msgid "Clear"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:190
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:117
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:191
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:119
 msgid "Default"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:191
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:118
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:192
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:120
 msgid "Select Color"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:192
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:119
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:193
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:121
 msgid "Current Color"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:200
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:201
 msgid "Digits Only"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:201
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:202
 msgid "Details not filled"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:202
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:203
 msgid "Are you sure that you have completed this bank transfer?"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:203
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:204
 msgid "Nothing Marked"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:204
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:205
 msgid ""
 "Are you sure to approve this Referral? It can't be reverted back once "
 "approved"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:205
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:206
 msgid ""
 "Are you sure to approve all the Referrals? It can't be reverted back once "
 "approved"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:206
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:207
 msgid ""
 "Are you sure to reject this Referral? It can't be reverted back once rejected"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:207
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:208
 msgid "Please input some text in message box"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:208
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:209
 msgid ""
 "Are you sure to reject all the Referrals? It can't be reverted back once "
 "rejected"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:209
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:210
 msgid "Please Enter Target URL"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:210
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:211
 msgid "Please Select Image"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:211
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:212
 msgid ""
 "Image width or height is not matching with selected Image WIDTH x HEIGHT"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:231
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:232
 msgid "Settings"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:241
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:417
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:242
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:418
 msgid "Affiliaa - WordPress & WooCommerce Affiliate Program"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:241
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:242
 msgid "Affiliaa Lite"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:333
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:434
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:334
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:435
 msgid "Affiliate Level"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:401
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:402
 msgid "This user is an affiliate now"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:404
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:405
 msgid "This user is not an affiliate now"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:423
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:424
 msgid "This will make this user also as an Affiliate"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:489
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:490
 msgid "Percentage Commission"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:495
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:625
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:496
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:626
 msgid "Fixed Commission"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:575
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:576
 msgid "Commission for this product is updated"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:578
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:267
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:579
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:269
 msgid "Something went wrong"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:604
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:605
 msgid "Add Commission"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:727
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:728
 msgid "Some referrals are not approved. Try again"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:767
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:772
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:768
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:773
 msgid "Some referrals are not rejected. Try again"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:794
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:819
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:795
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:820
 msgid "Something went wrong. Try again"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:815
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:899
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:816
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:900
 msgid "Deleted"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:861
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:862
 msgid "Successfully Uploaded"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:865
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:866
 msgid "Failed to upload"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:902
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:903
 msgid "Not Deleted"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:919
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:920
 msgid "Select an affiliate"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:935
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:936
 msgid "Select Affiliate"
 msgstr ""
 
-#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:989
+#: admin/rtwalwm-class-wp-wc-affiliate-program-admin.php:990
 msgid "There is no data available in this table"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:134
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:136
 msgid "Enter valid Link"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:136
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:138
 #: public/templates/rtwalwm_affiliate_body.php:354
 #: public/templates/rtwalwm_affiliate_body.php:509
 msgid "Copied"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:140
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:142
 msgid "Are you sure to send the request?"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:264
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:266
 msgid "You are now an affiliate"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:903
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:919
 msgid "New MLM commission"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:904
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:920
 msgid "You got a new MLM commission of amount"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:908
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:924
 msgid "From"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:915
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:931
 msgid "Generated a new MLM commission of amount"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1009
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1027
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1042
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1060
 msgid "Link"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1010
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1028
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1043
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1061
 msgid "Banner"
 msgstr ""
 
-#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1038
+#: public/rtwalwm-class-wp-wc-affiliate-program-public.php:1071
 msgid "No Result Found"
 msgstr ""
 
@@ -1859,6 +1892,10 @@ msgstr ""
 
 #: public/templates/rtwalwm_affiliate_body.php:245
 msgid "Percentage commission (%)"
+msgstr ""
+
+#: public/templates/rtwalwm_affiliate_body.php:250
+msgid "Fixed commission"
 msgstr ""
 
 #: public/templates/rtwalwm_affiliate_body.php:280

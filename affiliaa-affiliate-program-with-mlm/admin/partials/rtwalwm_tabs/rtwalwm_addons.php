@@ -6,14 +6,14 @@
 	<div class="rtwalwm_register_templates">
 		<a href="#" >
 			<div class="rtwalwm_reg_title">
-				<?php esc_html_e( 'Register/Login Templates', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+				<?php esc_html_e( 'Register/Login Templates', 'affiliaa-affiliate-program-with-mlm' ); ?>
 			</div>
 			<div class="rtwalwm_reg_shortcodes">
 				<span>
-					<label><?php esc_html_e( 'Login Shortcode', 'rtwalwm-wp-wc-affiliate-program' ); ?></label>
+					<label><?php esc_html_e( 'Login Shortcode', 'affiliaa-affiliate-program-with-mlm' ); ?></label>
 				</span>
 				<span>
-					<label><?php esc_html_e( 'Register Shrotcode', 'rtwalwm-wp-wc-affiliate-program' ); ?></label>
+					<label><?php esc_html_e( 'Register Shrotcode', 'affiliaa-affiliate-program-with-mlm' ); ?></label>
 				
 				</span>
 			</div>
@@ -47,13 +47,13 @@
 			if( $rtwalwm_sms_status_check ){
 		?>
 			<a href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_sms' ) );?>">
-				<?php esc_html_e( 'Social Media Share', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+				<?php esc_html_e( 'Social Media Share', 'affiliaa-affiliate-program-with-mlm' ); ?>
 			</a>
 		<?php 
 			}else{
 		?>
 			<a class="rtwalwm-unlock-sms" href="<?php echo esc_url( 'https://redefiningtheweb.com/product/social-media-share-addon-for-affiliate-program/1548' );?>" target="_blank">
-				<?php esc_html_e( 'Social Media Share', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+				<?php esc_html_e( 'Social Media Share', 'affiliaa-affiliate-program-with-mlm' ); ?>
 			</a>
 		<?php 
 			}

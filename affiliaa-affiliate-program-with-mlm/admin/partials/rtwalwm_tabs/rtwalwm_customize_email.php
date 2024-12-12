@@ -15,10 +15,10 @@ $test = get_option('customize_email',true);
 		<table class="rtwalwm_affiliates_table rtwalwm_data_table stripe" class="display dtr-inline" cellspacing="0">
 		  	<thead>
 			  	<tr>
-			    	<th><?php esc_html_e( 'Email type', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Subject', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-                    <th><?php esc_html_e( 'Activate/Deactivate', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-                    <th><?php esc_html_e( 'Action', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'Email type', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Subject', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+                    <th><?php esc_html_e( 'Activate/Deactivate', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+                    <th><?php esc_html_e( 'Action', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</thead>
 		  	<tbody>
@@ -28,11 +28,11 @@ $test = get_option('customize_email',true);
 						$rtwalwm_email_content_without_html = $val['content'];
                     ?>
 					<tr>	 
-                        <td><?php echo esc_html_e( $key ); ?></td>
-                        <td class='subject'><?php echo esc_html_e( $val['subject'], 'rtwalwm-wp-wc-affiliate-program'  ); ?></td>
+                        <td><?php echo esc_html( $key ); ?></td>
+                        <td class='subject'><?php echo esc_html( $val['subject'] ); ?></td>
                         <td><label class="rtwalwm_switch"><input type="checkbox" class="rtwalwm_email_check"><span class="rtwalwm_slider round"></span></label></td>
                         
-                        <td><input type='button' value='Edit Email' class='rtwalwm_customize_email' data-email_type="<?php esc_attr_e($key); ?>" /></td>	
+                        <td><input type='button' value='Edit Email' class='rtwalwm_customize_email' data-email_type="<?php esc_attr($key); ?>" /></td>	
                     </tr>
                     <?php
                         }
@@ -42,10 +42,10 @@ $test = get_option('customize_email',true);
 
 			<tfoot>
 			  	<tr>
-			    	<th><?php esc_html_e( 'Email type', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Subject', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-                    <th><?php esc_html_e( 'Activate/Deactivate', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-                    <th><?php esc_html_e( 'Action', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'Email type', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Subject', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+                    <th><?php esc_html_e( 'Activate/Deactivate', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+                    <th><?php esc_html_e( 'Action', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</tfoot>
 		</table>

@@ -7,7 +7,7 @@
 	}
 	else{
 		
-		$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 	
 	}
 	$rtwalwm_decimal_places = isset($rtwalwm_extra_features['decimal_places']) ? $rtwalwm_extra_features['decimal_places']:'2';
@@ -32,12 +32,12 @@
 		<div class="box-column-row">
 			<div class="box-column" id="rtwalwm_total_affiliates">
 				<div class="box-content">
-					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Affiliates', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Affiliates', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					<div class="box-content-desc">
 						<div class="box-content-icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/affiliate.png' ); ?>" alt=""></div>
 						<div class="box-content-right">
 								<?php printf( '<span class="box-content-value">%u</span>',  isset( $rtwalwm_total_affiliates ) ? esc_html( $rtwalwm_total_affiliates ) : esc_html( '0' ) ); ?>
-							    <p><?php esc_html_e( 'Total no. of affiliates registered', 'rtwalwm-wp-wc-affiliate-program' ); ?></p>
+							    <p><?php esc_html_e( 'Total no. of affiliates registered', 'affiliaa-affiliate-program-with-mlm' ); ?></p>
 						</div>
 					</div>
 
@@ -45,48 +45,48 @@
 			</div>
 			<div class="box-column" id="rtwalwm_total_referrals">
 				<div class="box-content">
-					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Referrals', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Referrals', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					<div class="box-content-desc">
 						<div class="box-content-icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/total_referrals.png' ); ?>" alt=""></div>
 						<div class="box-content-right">
 						<?php printf( '<span class="box-content-value">%u</span>', isset( $rtwalwm_total_referrals ) ? esc_html( $rtwalwm_total_referrals ): esc_html( '0' ) ); ?>
-					    <p><?php esc_html_e( 'Total no. of Referrals done', 'rtwalwm-wp-wc-affiliate-program' ); ?></p>
+					    <p><?php esc_html_e( 'Total no. of Referrals done', 'affiliaa-affiliate-program-with-mlm' ); ?></p>
 					</div>
 					</div>
 				</div>
 			</div>
 			<div class="box-column" id="rtwalwm_total_comm">
 				<div class="box-content">
-					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Commission', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Total Commission', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					<div class="box-content-desc">
 						<div class="box-content-icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/total_commission.png' ); ?>" alt=""></div>
 						<div class="box-content-right">
-						<?php printf( '<span class="box-content-value">'. $rtwalwm_currency_sym.number_format( $rtwalwm_total_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
-					    <p><?php esc_html_e( 'Total Commission generated from Referrals', 'rtwalwm-wp-wc-affiliate-program' ); ?></p>
+						<?php printf( '<span class="box-content-value">'. esc_html($rtwalwm_currency_sym).number_format( $rtwalwm_total_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
+					    <p><?php esc_html_e( 'Total Commission generated from Referrals', 'affiliaa-affiliate-program-with-mlm' ); ?></p>
 					</div>
 					</div>
 				</div>
 			</div>
 			<div class="box-column" id="rtwalwm_approved_comm">
 				<div class="box-content">
-					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Approved Commission', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Approved Commission', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					<div class="box-content-desc">
 						<div class="box-content-icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/approved_commission.png' ); ?>" alt=""></div>
 						<div class="box-content-right">
-						<?php printf( '<span class="box-content-value">'. $rtwalwm_currency_sym.number_format( $rtwalwm_approved_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
-					    <p><?php esc_html_e( 'Total Commission that needs to be paid', 'rtwalwm-wp-wc-affiliate-program' ); ?></p>
+						<?php printf( '<span class="box-content-value">'. esc_html($rtwalwm_currency_sym).number_format( $rtwalwm_approved_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
+					    <p><?php esc_html_e( 'Total Commission that needs to be paid', 'affiliaa-affiliate-program-with-mlm' ); ?></p>
 					</div>
 					</div>
 				</div>
 			</div>
 			<div class="box-column" id="rtwalwm_pending_comm">
 				<div class="box-content">
-					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Pending Commission', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+					<?php printf( '<h4 class="box-column-heading">%s</h4>', esc_html__( 'Pending Commission', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					<div class="box-content-desc">
 						<div class="box-content-icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/pending_commission.png' ); ?>" alt=""></div>
 						<div class="box-content-right">
-						<?php printf( '<span class="box-content-value">'. $rtwalwm_currency_sym.number_format( $rtwalwm_pending_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
-					    <p><?php esc_html_e( 'Total Commission that needs to be reviewed', 'rtwalwm-wp-wc-affiliate-program' ); ?></p>
+						<?php printf( '<span class="box-content-value">'. esc_html($rtwalwm_currency_sym).number_format( $rtwalwm_pending_comm ,$rtwalwm_decimal_places ).'</span>' ); ?>
+					    <p><?php esc_html_e( 'Total Commission that needs to be reviewed', 'affiliaa-affiliate-program-with-mlm' ); ?></p>
 					</div>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 			<div class="rtwalwm-referrals-column-content">
 				<div class="rtwalwm-referrals-header">
 					<h3>
-						<?php printf( '%s', esc_html__( 'Last 5 Referrals', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+						<?php printf( '%s', esc_html__( 'Last 5 Referrals', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					</h3>
 					<nav class="rtwalwm-nav">
 						<a href="javascript:void(0);" class="rtwalwm-referrals-accordian-icon"><span class="dashicons dashicons-arrow-up-alt2"></span></a>
@@ -118,9 +118,11 @@
 								<li>
 									<?php
 										$rtwalwm_date_time_format = $rtwalwm_date_format.' '.$rtwalwm_time_format;
-										$rtwalwm_local_date = get_date_from_gmt( date( 'Y-m-d H:i:s', strtotime( $rtwalwm_value[ 'date' ] ) ), $rtwalwm_date_time_format );
+										// $rtwalwm_local_date = get_date_from_gmt( date( 'Y-m-d H:i:s', strtotime( $rtwalwm_value[ 'date' ] ) ), $rtwalwm_date_time_format );
+										$rtwalwm_local_date = get_date_from_gmt( gmdate( 'Y-m-d H:i:s', strtotime( $rtwalwm_value['date'] ) ), $rtwalwm_date_time_format );
+
 									?>
-									<?php printf( ' %s %s %s %s %s %s', esc_html( $rtwalwm_currency_sym ), esc_html( number_format($rtwalwm_value[ 'amount' ],$rtwalwm_decimal_places,'.',',') ), esc_html__( 'for', 'rtwalwm-wp-wc-affiliate-program' ), esc_html( $rtwalwm_aff_name ), esc_html__( 'on', 'rtwalwm-wp-wc-affiliate-program' ), esc_html( $rtwalwm_local_date ) ); ?>
+									<?php printf( ' %s %s %s %s %s %s', esc_html( $rtwalwm_currency_sym ), esc_html( number_format($rtwalwm_value[ 'amount' ],$rtwalwm_decimal_places,'.',',') ), esc_html__( 'for', 'affiliaa-affiliate-program-with-mlm' ), esc_html( $rtwalwm_aff_name ), esc_html__( 'on', 'affiliaa-affiliate-program-with-mlm' ), esc_html( $rtwalwm_local_date ) ); ?>
 								</li>
 					<?php
 							}
@@ -133,7 +135,7 @@
 			<div class="rtwalwm-referrals-column-content">
 				<div class="rtwalwm-referrals-header">
 					<h3>
-						<?php printf( '%s', esc_html__( 'Top 5 affiliates', 'rtwalwm-wp-wc-affiliate-program' ) ); ?>
+						<?php printf( '%s', esc_html__( 'Top 5 affiliates', 'affiliaa-affiliate-program-with-mlm' ) ); ?>
 					</h3>
 					<nav class="rtwalwm-nav">
 						<a href="javascript:void(0);" class="rtwalwm-referrals-accordian-icon"><span class="dashicons dashicons-arrow-up-alt2"></span></a>
@@ -150,7 +152,7 @@
 								<li>
 									<span class="rtwalwm-key-count"><?php echo esc_html( $rtwalwm_key1+1 ); ?></span>
 									<p><?php printf( '%s (%u)', esc_html( $rtwalwm_aff_name ), esc_html( $rtwalwm_value1[ 'count' ] ) ); ?></p>
-									<p><?php printf( '%s %u | %s %s %s', esc_html__( 'Referrals', 'rtwalwm-wp-wc-affiliate-program' ), esc_html( $rtwalwm_value1[ 'count' ] ), esc_html__( 'Total Amount', 'rtwalwm-wp-wc-affiliate-program' ), esc_html( $rtwalwm_currency_sym ), esc_html( number_format($rtwalwm_value1[ 'amount' ],$rtwalwm_decimal_places,'.',',') ) ); ?></p>
+									<p><?php printf( '%s %u | %s %s %s', esc_html__( 'Referrals', 'affiliaa-affiliate-program-with-mlm' ), esc_html( $rtwalwm_value1[ 'count' ] ), esc_html__( 'Total Amount', 'affiliaa-affiliate-program-with-mlm' ), esc_html( $rtwalwm_currency_sym ), esc_html( number_format($rtwalwm_value1[ 'amount' ],$rtwalwm_decimal_places,'.',',') ) ); ?></p>
 								</li>
 					<?php
 							}

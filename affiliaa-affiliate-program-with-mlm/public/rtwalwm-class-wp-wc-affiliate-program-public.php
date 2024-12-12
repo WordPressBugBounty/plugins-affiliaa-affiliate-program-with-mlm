@@ -39,6 +39,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 	 */
 	private $rtwalwm_version;
 
+	private $rtwalwm_comm_gene = false;
+
 	/**
 	 * Initialize the class and set its properties.
 	 *
@@ -113,10 +115,10 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 		wp_enqueue_script( 'wp-color-picker', admin_url( 'js/color-picker.min.js' ), array( 'iris' ), $this->rtwalwm_version, true );
 
 		$rtwalwm_colorpicker_l10n = array(
-			'clear' 		=> esc_html__( 'Clear' ),
-			'defaultString' => esc_html__( 'Default' ),
-			'pick' 			=> esc_html__( 'Select Color' ),
-			'current' 		=> esc_html__( 'Current Color' )
+			'clear' 		=> esc_html__( 'Clear', 'affiliaa-affiliate-program-with-mlm' ),
+			'defaultString' => esc_html__( 'Default', 'affiliaa-affiliate-program-with-mlm' ),
+			'pick' 			=> esc_html__( 'Select Color', 'affiliaa-affiliate-program-with-mlm' ),
+			'current' 		=> esc_html__( 'Current Color', 'affiliaa-affiliate-program-with-mlm' )
 		);
 		wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $rtwalwm_colorpicker_l10n );
 		wp_enqueue_script( 'rtwwap-modal', plugin_dir_url( __FILE__ ) . 'js/jquery.modal.js', array('jquery', 'jquery-ui-accordion'), $this->rtwalwm_version, true );
@@ -131,13 +133,13 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 										'rtwalwm_ajaxurl' 		=> esc_url(admin_url( 'admin-ajax.php' )),
 										'rtwalwm_nonce' 		=> $rtwalwm_ajax_nonce,
 										'rtwalwm_home_url' 		=> esc_url( home_url() ),
-										'rtwalwm_enter_valid_url' => esc_html__( 'Enter valid Link', 'rtwalwm-wp-wc-affiliate-program' ),
+										'rtwalwm_enter_valid_url' => esc_html__( 'Enter valid Link', 'affiliaa-affiliate-program-with-mlm' ),
 										'rtwalwm_whatsapp_url' 	=> $rtwalwm_whatsapp_device,
-										'rtwalwm_copied' 		=> esc_html__( 'Copied', 'rtwalwm-wp-wc-affiliate-program' ),
+										'rtwalwm_copied' 		=> esc_html__( 'Copied', 'affiliaa-affiliate-program-with-mlm' ),
 										'rtwalwm_twitter_url' 	=> esc_url( 'https://twitter.com/intent/tweet?text=' ),
 										'rtwalwm_mail_url' 		=> esc_url( 'mailto:enteryour@addresshere.com?subject=Click on this link &body=Check%20this%20out: ' ),
 										'rtwalwm_fb_url' 		=> esc_url( 'https://www.facebook.com/sharer/sharer.php?u=' ),
-										'rtwalwm_rqst_sure' => esc_html__( 'Are you sure to send the request?', 'rtwalwm-wp-wc-affiliate-program' )
+										'rtwalwm_rqst_sure' => esc_html__( 'Are you sure to send the request?', 'affiliaa-affiliate-program-with-mlm' )
 									);
 		wp_localize_script( $this->rtwalwm_plugin_name, 'rtwalwm_global_params', $rtwalwm_translation_array );
 		wp_enqueue_script( $this->rtwalwm_plugin_name );
@@ -161,7 +163,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 	*/
 	function rtwalwm_add_account_menu_item( $rtwalwm_menu_links ){
 		
-		$rtwalwm_new = array( 'rtwalwm_affiliate_menu' => esc_html__( 'Affiliate', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_new = array( 'rtwalwm_affiliate_menu' => esc_html__( 'Affiliate', 'affiliaa-affiliate-program-with-mlm' ) );
 
 		$rtwalwm_menu_links = array_slice( $rtwalwm_menu_links, 0, 1, true )
 		+ $rtwalwm_new
@@ -193,7 +195,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 		$rtwalwm_check_ajax = check_ajax_referer( 'rtwalwm-ajax-security-string', 'rtwalwm_security_check' );
 
 		if ( $rtwalwm_check_ajax ) {
-			$rtwalwm_user_id 	= sanitize_text_field( $_POST[ 'rtwalwm_user_id' ] );
+			$rtwalwm_user_id 	= isset($_POST[ 'rtwalwm_user_id' ])?sanitize_text_field( $_POST[ 'rtwalwm_user_id' ] ):'';
 			$rtwalwm_updated 	= update_user_meta( $rtwalwm_user_id, 'rtwwwap_affiliate', 1 );
 			$rtwalwm_aff_approved = 0;
 			
@@ -223,7 +225,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 											                'parent_id'    	=> $rtwwwap_parent_id,
 											                'status'    	=> 1,
 											                'last_activity'	=> '0000-00-00 00:00:00',
-											                'added_date'    => date( 'Y-m-d H:i:s' )
+											                'added_date'    => gmdate( 'Y-m-d H:i:s' )
 											            )
 											        );
 							}
@@ -248,7 +250,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 											                'parent_id'    	=> $rtwwwap_child_to_get_child,
 											                'status'    	=> 1,
 											                'last_activity'	=> '0000-00-00 00:00:00',
-											                'added_date'    => date( 'Y-m-d H:i:s' )
+											                'added_date'    => gmdate( 'Y-m-d H:i:s' )
 											            )
 													);
 							}
@@ -261,13 +263,13 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 			}
 
 			if( $rtwalwm_updated ){
-				$rtwalwm_message = esc_html__( 'You are now an affiliate', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_message = esc_html__( 'You are now an affiliate', 'affiliaa-affiliate-program-with-mlm' );
 			}
 			else{
-				$rtwalwm_message = esc_html__( 'Something went wrong', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_message = esc_html__( 'Something went wrong', 'affiliaa-affiliate-program-with-mlm' );
 			}
 
-			echo json_encode( array( 'rtwalwm_status' => $rtwalwm_updated, 'rtwalwm_message' => $rtwalwm_message ) );
+			echo wp_json_encode( array( 'rtwalwm_status' => $rtwalwm_updated, 'rtwalwm_message' => $rtwalwm_message ) );
 			die;
 		}
 	}
@@ -352,7 +354,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 		// $n = 6;
 	
 		for ($rtwalwm_init = 0; $rtwalwm_init < $rtwalwm_len; $rtwalwm_init++) {
-			$rtwalwm_index = rand(0, strlen($rtwalwm_characters) - 1);
+			$rtwalwm_index = wp_rand(0, strlen($rtwalwm_characters) - 1);
 			$rtwalwm_randomString .= $rtwalwm_characters[$rtwalwm_index];
 		}
 		$rtwalwm_all_users = get_users(array(
@@ -413,8 +415,22 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 	*/
 
 		
-	function rtwalwm_referred_item_ordered( $rtwalwm_order_id )
+	function rtwalwm_referred_item_ordered( $rtwalwm_order_object )
 	{ 	
+		if($this->rtwalwm_comm_gene === true) {
+		return;
+		}
+		else {
+			$this->rtwalwm_comm_gene = true;
+		}
+		
+		if(is_object($rtwalwm_order_object)){
+			$rtwalwm_order_id = $rtwalwm_order_object->get_id();
+		}
+		else{
+			$rtwalwm_order_id = $rtwalwm_order_object;
+		}
+
 		$rtwalwm_commission_settings = get_option( 'rtwwwap_commission_settings_opt' );
 	
 
@@ -437,7 +453,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 				$rtwalwm_currency_sym 	= get_woocommerce_currency_symbol();
 			}
 			else{
-				$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 
 			}
 			$rtwalwm_shared 			= strpos( $rtwalwm_cookie, 'share' );
@@ -620,8 +636,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 		
 		if( isset( $rtwalwm_total_commission ) && $rtwalwm_total_commission !== '' && $rtwalwm_total_commission !== 0 ){
 			$rtwalwm_capped 		= 0;
-			$rtwalwm_current_year 	= date("Y");
-			$rtwalwm_current_month 	= date("m");
+			$rtwalwm_current_year 	= gmdate("Y");
+			$rtwalwm_current_month 	= gmdate("m");
 
 		
 
@@ -630,7 +646,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 			if( !empty( $rtwalwm_aff_prod_details ) ){
 				
 
-				$rtwalwm_aff_prod_details = json_encode( $rtwalwm_aff_prod_details );
+				$rtwalwm_aff_prod_details = wp_json_encode( $rtwalwm_aff_prod_details );
 				$rtwalwm_device = ( wp_is_mobile() ) ? 'mobile' : 'desktop';
 
 				$rtwalwm_locale = get_locale();
@@ -642,7 +658,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 						'aff_id'    			=> $rtwalwm_user_id,
 						'type'    				=> 0,
 						'order_id'    			=> esc_html( $rtwalwm_order_id ),
-						'date'    				=> date( 'Y-m-d H:i:s' ),
+						'date'    				=> gmdate( 'Y-m-d H:i:s' ),
 						'status'    			=> 0,
 						'amount'    			=> $rtwalwm_total_commission,
 						'capped'    			=> esc_html( $rtwalwm_capped ),
@@ -740,7 +756,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 					$rtwalwm_currency_sym 	= get_woocommerce_currency_symbol();
 				}
 				else{
-					$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+					$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 
 				}
 				$rtwalwm_shared 			= strpos( $rtwalwm_cookie, 'share' );
@@ -819,8 +835,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 
 				if( isset( $rtwalwm_total_commission ) && $rtwalwm_total_commission !== '' && $rtwalwm_total_commission !== 0 ){
 					$rtwalwm_capped 		= 0;
-					$rtwalwm_current_year 	= date("Y");
-					$rtwalwm_current_month 	= date("m");
+					$rtwalwm_current_year 	= gmdate("Y");
+					$rtwalwm_current_month 	= gmdate("m");
 
 				
 
@@ -829,7 +845,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 					if( !empty( $rtwalwm_aff_prod_details ) ){
 						
 
-						$rtwalwm_aff_prod_details = json_encode( $rtwalwm_aff_prod_details );
+						$rtwalwm_aff_prod_details = wp_json_encode( $rtwalwm_aff_prod_details );
 						$rtwalwm_device = ( wp_is_mobile() ) ? 'mobile' : 'desktop';
 
 						$rtwalwm_locale = get_locale();
@@ -841,7 +857,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 								'aff_id'    			=> $rtwalwm_user_id,
 								'type'    				=> 0,
 								'order_id'    			=> esc_html( $rtwalwm_order_id ),
-								'date'    				=> date( 'Y-m-d H:i:s' ),
+								'date'    				=> gmdate( 'Y-m-d H:i:s' ),
 								'status'    			=> 0,
 								'amount'    			=> $rtwalwm_total_commission,
 								'capped'    			=> esc_html( $rtwalwm_capped ),
@@ -900,19 +916,19 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 						$rtwwwap_decimal_places = $rtwwwap_extra_features['decimal_places'].'f';
 						$rtwwwap_to 			= get_user_by( 'id', $rtwwwap_user_id );
 						$rtwwwap_to 			= esc_html( $rtwwwap_to->user_email );
-						$rtwwwap_subject 		= esc_html__( 'New MLM commission', 'rtwalwm-wp-wc-affiliate-program' );
-						$rtwwwap_message 		= sprintf( '%s %s%01.'.$rtwwwap_decimal_places, esc_html__( 'You got a new MLM commission of amount', 'rtwalwm-wp-wc-affiliate-program' ), $rtwwwap_currency_sym, $rtwwwap_commission );
+						$rtwwwap_subject 		= esc_html__( 'New MLM commission', 'affiliaa-affiliate-program-with-mlm' );
+						$rtwwwap_message 		= sprintf( '%s %s%01.'.$rtwwwap_decimal_places, esc_html__( 'You got a new MLM commission of amount', 'affiliaa-affiliate-program-with-mlm' ), $rtwwwap_currency_sym, $rtwwwap_commission );
 						$rtwwwap_from_name 		= esc_html( get_bloginfo( 'name' ) );
 						$rtwwwap_from_email 	= esc_html( get_bloginfo( 'admin_email' ) );
 
-						$rtwwwap_headers[] 		= sprintf( '%s: %s <%s>', esc_html__( 'From', 'rtwalwm-wp-wc-affiliate-program' ), $rtwwwap_from_name, $rtwwwap_from_email );
+						$rtwwwap_headers[] 		= sprintf( '%s: %s <%s>', esc_html__( 'From', 'affiliaa-affiliate-program-with-mlm' ), $rtwwwap_from_name, $rtwwwap_from_email );
 
 						// mail to affiliate
 						wp_mail( $rtwwwap_to, $rtwwwap_subject, $rtwwwap_message, $rtwwwap_headers );
 
 						if( isset( $rtwwwap_extra_features[ 'mail_to_admin' ] ) && $rtwwwap_extra_features[ 'mail_to_admin' ] == 1 ){
 							// mail to admin
-							$rtwwwap_message = sprintf( '%s %s%01.'.$rtwwwap_decimal_places, esc_html__( 'Generated a new MLM commission of amount', 'rtwalwm-wp-wc-affiliate-program' ), $rtwwwap_currency_sym, $rtwwwap_commission );
+							$rtwwwap_message = sprintf( '%s %s%01.'.$rtwwwap_decimal_places, esc_html__( 'Generated a new MLM commission of amount', 'affiliaa-affiliate-program-with-mlm' ), $rtwwwap_currency_sym, $rtwwwap_commission );
 							wp_mail( $rtwwwap_from_email, $rtwwwap_subject, $rtwwwap_message, $rtwwwap_headers );
 						}
 					}
@@ -931,7 +947,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 				                'aff_id'    			=> $rtwwwap_user_id,
 				                'type'    				=> 4,
 				                'order_id'    			=> esc_html( $rtwwwap_order_id ),
-				                'date'    				=> date( 'Y-m-d H:i:s' ),
+				                'date'    				=> gmdate( 'Y-m-d H:i:s' ),
 				                'status'    			=> 0,
 				                'amount'    			=> esc_html( $rtwwwap_commission ),
 				                'capped'    			=> 0,
@@ -975,8 +991,25 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 				$rtwalwm_post_type = 'download';
 			}
 		
-			$rtwalwm_query = $wpdb->prepare( "SELECT * FROM ".$wpdb->posts." JOIN ".$wpdb->term_relationships." ON ".$wpdb->posts.".`ID` = ".$wpdb->term_relationships.".`object_id` JOIN ".$wpdb->term_taxonomy." ON ".$wpdb->term_relationships.".`term_taxonomy_id` = ".$wpdb->term_taxonomy.".`term_taxonomy_id` WHERE ".$wpdb->posts.".`post_title` LIKE %s AND ".$wpdb->posts.".`post_type` LIKE '".$rtwalwm_post_type."' AND ".$wpdb->term_taxonomy.".`term_id` =%d", $rtwalwm_like, $rtwalwm_cat_id );
-			$rtwalwm_prods = $wpdb->get_results( $rtwalwm_query, ARRAY_A );
+			// $rtwalwm_query = $wpdb->prepare( "SELECT * FROM ".$wpdb->posts." JOIN ".$wpdb->term_relationships." ON ".$wpdb->posts.".`ID` = ".$wpdb->term_relationships.".`object_id` JOIN ".$wpdb->term_taxonomy." ON ".$wpdb->term_relationships.".`term_taxonomy_id` = ".$wpdb->term_taxonomy.".`term_taxonomy_id` WHERE ".$wpdb->posts.".`post_title` LIKE %s AND ".$wpdb->posts.".`post_type` LIKE '".$rtwalwm_post_type."' AND ".$wpdb->term_taxonomy.".`term_id` =%d", $rtwalwm_like, $rtwalwm_cat_id );
+			
+			// $rtwalwm_prods = $wpdb->get_results( $rtwalwm_query, ARRAY_A );
+
+			$rtwalwm_prods = $wpdb->get_results(
+				$wpdb->prepare(
+					"SELECT * 
+					FROM {$wpdb->posts} 
+					JOIN {$wpdb->term_relationships} ON {$wpdb->posts}.`ID` = {$wpdb->term_relationships}.`object_id` 
+					JOIN {$wpdb->term_taxonomy} ON {$wpdb->term_relationships}.`term_taxonomy_id` = {$wpdb->term_taxonomy}.`term_taxonomy_id` 
+					WHERE {$wpdb->posts}.`post_title` LIKE %s 
+					AND {$wpdb->posts}.`post_type` = %s 
+					AND {$wpdb->term_taxonomy}.`term_id` = %d",
+					$rtwalwm_like,
+					$rtwalwm_post_type,
+					$rtwalwm_cat_id
+				),
+				ARRAY_A
+			);			
 			
 			$rtwalwm_html = '';
 			
@@ -987,7 +1020,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 					$rtwalwm_currency_sym 	= get_woocommerce_currency_symbol();
 				}
 				else{
-					$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+					$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 				}
 
 				foreach( $rtwalwm_prods as $rtwalwm_key => $rtwalwm_value ){
@@ -1006,8 +1039,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 							$rtwalwm_html .= 				'<p class="rtwalwm_prod_price">'.$rtwalwm_currency_sym.$rtwalwm_prod_price->price.'</p>';
 							$rtwalwm_html .= 			'</div>';
 							$rtwalwm_html .= 			'<p data-rtwalwm_id="'.esc_attr( $rtwalwm_value[ 'ID' ] ).'" data-rtwalwm_title="'.esc_attr( $rtwalwm_value[ 'post_title' ] ).'" data-rtwalwm_url="'.esc_attr( esc_url( $rtwalwm_prod_url ) ).'" data-rtwalwm_displayprice="'.esc_attr( $rtwalwm_prod_price->price ).'" data-rtwalwm_image="'.esc_attr( $rtwalwm_img_url[0] ).'" >';
-							$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_link" value="'.esc_attr__( "Link", "rtwalwm-wp-wc-affiliate-program" ).'" disabled/>';
-							$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_banner" value="'.esc_attr__( "Banner", "rtwalwm-wp-wc-affiliate-program" ).'" disabled/>';
+							$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_link" value="'.esc_attr__( "Link", "affiliaa-affiliate-program-with-mlm" ).'" disabled/>';
+							$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_banner" value="'.esc_attr__( "Banner", "affiliaa-affiliate-program-with-mlm" ).'" disabled/>';
 							$rtwalwm_html .= 			'</p>';
 							$rtwalwm_html .= 		'</div>';
 							$rtwalwm_html .= 	'</div>';
@@ -1024,8 +1057,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 						$rtwalwm_html .= 				'<p class="rtwalwm_prod_price">'.$rtwalwm_prod_price->get_price_html().'</p>';
 						$rtwalwm_html .= 			'</div>';
 						$rtwalwm_html .= 			'<p data-rtwalwm_id="'.esc_attr( $rtwalwm_value[ 'ID' ] ).'" data-rtwalwm_title="'.esc_attr( $rtwalwm_value[ 'post_title' ] ).'" data-rtwalwm_url="'.esc_attr( esc_url( $rtwalwm_prod_url ) ).'" data-rtwalwm_displayprice="'.esc_attr( $rtwalwm_prod_price->get_price_html() ).'" data-rtwalwm_image="'.esc_attr( $rtwalwm_img_url[0] ).'" >';
-						$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_link" value="'.esc_attr__( "Link", "rtwalwm-wp-wc-affiliate-program" ).'" disabled/>';
-						$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_banner" value="'.esc_attr__( "Banner", "rtwalwm-wp-wc-affiliate-program" ).'" disabled/>';
+						$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_link" value="'.esc_attr__( "Link", "affiliaa-affiliate-program-with-mlm" ).'" disabled/>';
+						$rtwalwm_html .= 				'<input type="button" id="rtwalwm_create_banner" value="'.esc_attr__( "Banner", "affiliaa-affiliate-program-with-mlm" ).'" disabled/>';
 						$rtwalwm_html .= 			'</p>';
 						$rtwalwm_html .= 		'</div>';
 						$rtwalwm_html .= 	'</div>';
@@ -1035,13 +1068,13 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Public {
 			}
 
 			if( empty( $rtwalwm_prods ) ){
-				$rtwalwm_message = esc_html__( 'No Result Found', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_message = esc_html__( 'No Result Found', 'affiliaa-affiliate-program-with-mlm' );
 			}
 
 			
 
 
-			echo json_encode( array( 'rtwalwm_products' => $rtwalwm_html, 'rtwalwm_message' => $rtwalwm_message ) );
+			echo wp_json_encode( array( 'rtwalwm_products' => $rtwalwm_html, 'rtwalwm_message' => $rtwalwm_message ) );
 			die;
 		}
 	}

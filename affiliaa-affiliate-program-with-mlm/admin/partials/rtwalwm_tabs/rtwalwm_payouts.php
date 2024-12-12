@@ -4,10 +4,10 @@
 ?>
 
 <p class="rtwalwm_add_new_affiliate">
-	<input type="button" value="<?php esc_attr_e( 'Pay marked PayPal Affiliates', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button rtwalwm_all_paypal_affiliate" name="" />
+	<input type="button" value="<?php esc_attr_e( 'Pay marked PayPal Affiliates', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button rtwalwm_all_paypal_affiliate" name="" />
 
-	<input type="button" value="<?php esc_attr_e( 'Pay marked Stripe Affiliates', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button rtwalwm_all_stripe_affiliate" name="" />
-	<a class="rtwalwm-button" target="_blank" href=<?php echo esc_url("https://woocommerce.com/products/affiliate-and-referral/")?> ><?php esc_html_e( 'Get it now', 'rtwalwm-wp-wc-affiliate-program' ); ?></a>
+	<input type="button" value="<?php esc_attr_e( 'Pay marked Stripe Affiliates', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button rtwalwm_all_stripe_affiliate" name="" />
+	<a class="rtwalwm-button" target="_blank" href=<?php echo esc_url("https://woocommerce.com/products/affiliate-and-referral/")?> ><?php esc_html_e( 'Get it now', 'affiliaa-affiliate-program-with-mlm' ); ?></a>
 	<span id = "rtwalwm_pro_img_level_manual_referral"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 </p>
 <div class ="rtwwdpdl_pro_text_overlay">
@@ -24,12 +24,12 @@
 			    			<label for="rtwalwm_checkbox-th"></label>
 			    		</span>
 			    	</th>
-			    	<th><?php esc_html_e( 'User ID', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Affiliate', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'No. of Referrals', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Last Referral', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Status', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'User ID', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Affiliate', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'No. of Referrals', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Last Referral', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Status', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</thead>
 		  	<tbody>
@@ -93,14 +93,15 @@
 									}
 									else{
 									
-										$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+										$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 									}
 					    			echo esc_html( $rtwalwm_currency_sym.$rtwalwm_user_wallet ); ?>
 					    	</td>
 					    	<td>
 					    		<?php
 									$rtwalwm_date_time_format = $rtwalwm_date_format.' '.$rtwalwm_time_format;
-									$rtwalwm_local_date = get_date_from_gmt( date( 'Y-m-d H:i:s', strtotime( $rtwalwm_value[ 'date' ] ) ), $rtwalwm_date_time_format );
+									// $rtwalwm_local_date = get_date_from_gmt( date( 'Y-m-d H:i:s', strtotime( $rtwalwm_value[ 'date' ] ) ), $rtwalwm_date_time_format );
+									$rtwalwm_local_date = get_date_from_gmt( gmdate( 'Y-m-d H:i:s', strtotime( $rtwalwm_value['date'] ) ), $rtwalwm_date_time_format );
 								?>
 					    		<?php echo esc_html( $rtwalwm_local_date ); ?>
 					    	</td>
@@ -116,15 +117,15 @@
 
 					    				if( $rtwalwm_admin_paypal && $rtwalwm_payment_type && $rtwalwm_payment_type == 'rtwalwm_payment_paypal' ){
 					    					$rtwalwm_payment_class 	= 'rtwalwm_payment_paypal';
-					    					$rtwalwm_payment_name 	= esc_html__( 'Paypal', 'rtwalwm-wp-wc-affiliate-program' );
+					    					$rtwalwm_payment_name 	= esc_html__( 'Paypal', 'affiliaa-affiliate-program-with-mlm' );
 					    				}
 					    				elseif( $rtwalwm_admin_stripe && $rtwalwm_payment_type && $rtwalwm_payment_type == 'rtwalwm_payment_stripe' ){
 					    					$rtwalwm_payment_class 	= 'rtwalwm_payment_stripe';
-					    					$rtwalwm_payment_name 	= esc_html__( 'Stripe', 'rtwalwm-wp-wc-affiliate-program' );
+					    					$rtwalwm_payment_name 	= esc_html__( 'Stripe', 'affiliaa-affiliate-program-with-mlm' );
 					    				}
 					    				elseif( $rtwalwm_payment_type && $rtwalwm_payment_type == 'rtwalwm_payment_direct' ){
 					    					$rtwalwm_payment_class 	= 'rtwalwm_payment_direct';
-					    					$rtwalwm_payment_name 	= esc_html__( 'Bank Details', 'rtwalwm-wp-wc-affiliate-program' );
+					    					$rtwalwm_payment_name 	= esc_html__( 'Bank Details', 'affiliaa-affiliate-program-with-mlm' );
 					    				}
 					    			?>
 					    			<?php
@@ -134,14 +135,14 @@
 							    				<?php echo esc_html( $rtwalwm_payment_name ); ?>
 							    			</span>
 							    			<span class="rtwalwm_paid" >
-							    				<?php esc_html_e( 'Pay', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							    				<?php esc_html_e( 'Pay', 'affiliaa-affiliate-program-with-mlm' ); ?>
 							    			</span>
 						    		<?php
 						    			}
 						    			else{
 						    		?>
 						    				<span class="rtwalwm_no_payment" data-rtwalwm_pay_type="<?php echo esc_attr( $rtwalwm_payment_class ); ?>">
-							    				<?php esc_html_e( 'No payment method defined', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							    				<?php esc_html_e( 'No payment method defined', 'affiliaa-affiliate-program-with-mlm' ); ?>
 							    			</span>
 						    		<?php
 						    			}
@@ -154,12 +155,12 @@
 			<tfoot>
 			  	<tr>
 			    	<th></th>
-			    	<th><?php esc_html_e( 'User ID', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Affiliate', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'No. of Referrals', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Last Referral', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Status', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'User ID', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Affiliate', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'No. of Referrals', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Last Referral', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Status', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</tfoot>
 		</table>

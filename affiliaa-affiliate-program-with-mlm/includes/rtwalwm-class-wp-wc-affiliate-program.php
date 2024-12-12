@@ -75,7 +75,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program {
 		} else {
 			$this->rtwalwm_version = '1.0.0';
 		}
-		$this->rtwalwm_plugin_name = 'rtwalwm-wp-wc-affiliate-program';
+		$this->rtwalwm_plugin_name = 'affiliaa-affiliate-program-with-mlm';
 
 		$this->rtwalwm_load_dependencies();
 		$this->rtwalwm_set_locale();
@@ -263,6 +263,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program {
 		if(RTWALWM_IS_WOO == 1 )
 		{
 		$this->rtwalwm_loader->rtwalwm_add_action( 'woocommerce_checkout_update_order_meta', $rtwalwm_plugin_public, 'rtwalwm_referred_item_ordered' );
+
+		$this->rtwalwm_loader->rtwalwm_add_action( 'woocommerce_store_api_checkout_order_processed', $rtwalwm_plugin_public, 'rtwalwm_referred_item_ordered' );
 		}
 	
 		if(RTWALWM_IS_Easy == 1 )

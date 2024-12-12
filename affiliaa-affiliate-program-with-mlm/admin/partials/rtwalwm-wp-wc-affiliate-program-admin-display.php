@@ -94,7 +94,7 @@
 	$rtwalwm_referral_noti = get_option( 'rtwwwap_referral_noti' );
 ?>
 
-<div class="rtw_popup">
+<!-- <div class="rtw_popup">
 	<div class="rtw_card">
 		<div class="rtw_card_label">
 			<label>Cyber Week Sale</label>
@@ -109,45 +109,45 @@
 			<a class="rtw_link" href="https://codecanyon.net/item/wordpress-woocommerce-affiliate-program/23580333" target="_blank"> <button class="rtwalwm_buy_now">Buy Now</button></a>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <div class="wrap rtwalwm">
 	<div class="rtwalwm_loader_wrapper">
 		<div class="rtwalwm_loader_image"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/wpspin-2x.gif' ); ?>"></div>
 	</div>
-	<h2 class="rtwalwm-main-heading"><span><?php esc_html_e( 'Affiliaa - Affiliate Program with MLM', 'rtwalwm-wp-wc-affiliate-program' ); ?></span></h2>
+	<h2 class="rtwalwm-main-heading"><span><?php esc_html_e( 'Affiliaa - Affiliate Program with MLM', 'affiliaa-affiliate-program-with-mlm' ); ?></span></h2>
 	<nav class="rtwalwm-navigation-wrapper nav-tab-wrapper">
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_dashboard_active ); ?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_dashboard' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/dashboard.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Dashboard Overview', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Dashboard Overview', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_affiliate_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_affiliates' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/affiliate_menu.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Affiliates', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Affiliates', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 
 		<!-- Customize email tab starts -->
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_Email_active ); ?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_customize_email' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/email52.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Customize Email', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Customize Email', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 
 		<!-- end -->
 
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_commission_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_commission' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/commission_setting.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Commission Setting', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Commission Setting', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_levels_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_levels' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/levels.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Levels', 'rtwalwm-wp-wc-affiliate-program' ); ?> 	<span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
+			<?php esc_html_e( 'Levels', 'affiliaa-affiliate-program-with-mlm' ); ?> 	<span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_referrals_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_referrals' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/referral_menu_icon.png' ); ?>" alt=""></div>
 			<div class="rtwalwm_notify_wrap">
 				<?php
-					esc_html_e( 'Referrals', 'rtwalwm-wp-wc-affiliate-program' );
+					esc_html_e( 'Referrals', 'affiliaa-affiliate-program-with-mlm' );
 					if( $rtwalwm_referral_noti ){
 				?>
 						<span class="rtwalwm_notify_number"><?php echo esc_html( $rtwalwm_referral_noti ); ?></span>
@@ -158,28 +158,28 @@
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_payouts_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_payouts' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/payout.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Payouts', 'rtwalwm-wp-wc-affiliate-program' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
+			<?php esc_html_e( 'Payouts', 'affiliaa-affiliate-program-with-mlm' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_extra_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_extra' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/extra_feature.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Extra Features', 'rtwalwm-wp-wc-affiliate-program' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
+			<?php esc_html_e( 'Extra Features', 'affiliaa-affiliate-program-with-mlm' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 		</a>
 	
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_mlm_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_mlm' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/mlm.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'MLM', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'MLM', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_custom_banner_active ); ?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_custom_banner' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/custom_banner.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Custom Banner', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Custom Banner', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_addons_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_addons' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/add_ons.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Add-ons', 'rtwalwm-wp-wc-affiliate-program' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
+			<?php esc_html_e( 'Add-ons', 'affiliaa-affiliate-program-with-mlm' ); ?><span id = "rtwalwm_pro_img_level"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 		</a>
 		<a class="nav-tab <?php echo esc_attr( $rtwalwm_help_active );?>" href="<?php echo esc_url( admin_url( 'admin.php?page=rtwalwm&rtwalwm_tab=rtwalwm_help' ) );?>">
 			<div class="rtwalwm_tab_icon"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/help.png' ); ?>" alt=""></div>
-			<?php esc_html_e( 'Help', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<?php esc_html_e( 'Help', 'affiliaa-affiliate-program-with-mlm' ); ?>
 		</a>
 	</nav>
 	<?php
@@ -255,7 +255,7 @@
 	?>
 			<?php if($_GET[ 'rtwalwm_tab' ] =="rtwalwm_commission"  || $_GET[ 'rtwalwm_tab' ] =="rtwalwm_mlm" || $_GET[ 'rtwalwm_tab' ] =="rtwalwm_extra" ) {  ?>
 					<p class="submit">
-						<input type="submit" value="<?php esc_attr_e( 'Save changes', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button" name="submit" />
+						<input type="submit" value="<?php esc_attr_e( 'Save changes', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button" name="submit" />
 					</p>
 			<?php } ?>
 				</form>

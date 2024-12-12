@@ -87,8 +87,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Activator {
 		// referral table
 		$table_name_referral = $wpdb->prefix . 'rtwwwap_referrals';
 
-		if( $wpdb->get_var("show tables like '". $table_name_referral . "'") !== $table_name_referral || ( $rtwalwm_install_ver != $rtwalwm_db_version ) )
-		{
+		// if( $wpdb->get_var("show tables like '". $table_name_referral . "'") !== $table_name_referral || ( $rtwalwm_install_ver != $rtwalwm_db_version ) )
+		if ( $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $table_name_referral)) !== $table_name_referral || ( $rtwalwm_install_ver != $rtwalwm_db_version ) ) {
 			$sql[] = "CREATE TABLE $table_name_referral (
 				id mediumint(9) NOT NULL AUTO_INCREMENT,
 				aff_id bigint(20) NOT NULL,
@@ -114,7 +114,8 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_Activator {
 		// mlm table
 		$table_name_mlm = $wpdb->prefix.'rtwwwap_mlm';
 
-		if( $wpdb->get_var("show tables like '". $table_name_mlm . "'") !== $table_name_mlm )
+		// if( $wpdb->get_var("show tables like '". $table_name_mlm . "'") !== $table_name_mlm )
+		if ( $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $table_name_mlm)) !== $table_name_mlm )
 		{
 			$sql[] = "CREATE TABLE $table_name_mlm (
 				id mediumint(9) NOT NULL AUTO_INCREMENT,

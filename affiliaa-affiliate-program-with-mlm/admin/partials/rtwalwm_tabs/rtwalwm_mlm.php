@@ -10,7 +10,7 @@
 <table class="rtwalwm-table form-table">
 	<tbody>
 		<tr>
-			<th><?php esc_html_e( 'Activate MLM', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			<th><?php esc_html_e( 'Activate MLM', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			<td class="tr2">
 				<?php
 					$rtwwwap_mlm_activate_checked = 0;
@@ -20,20 +20,20 @@
 				?>
 				<p>
 					<span class="rtwalwm-custom-radio">
-						<input id="radio-1" type="radio" name="rtwwwap_mlm_opt[activate]" value="1" <?php checked( $rtwwwap_mlm_activate_checked, 1 ); ?> /><?php esc_html_e( 'On', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<input id="radio-1" type="radio" name="rtwwwap_mlm_opt[activate]" value="1" <?php checked( $rtwwwap_mlm_activate_checked, 1 ); ?> /><?php esc_html_e( 'On', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						<label for="radio-1"></label>
 					</span>
 				</p>
 				<p>
 					<span class="rtwalwm-custom-radio">
-						<input id="radio-2" type="radio" name="rtwwwap_mlm_opt[activate]" value="0" <?php checked( $rtwwwap_mlm_activate_checked, 0 ); ?> /><?php esc_html_e( 'Off', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<input id="radio-2" type="radio" name="rtwwwap_mlm_opt[activate]" value="0" <?php checked( $rtwwwap_mlm_activate_checked, 0 ); ?> /><?php esc_html_e( 'Off', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						<label for="radio-2"></label>
 					</span>
 				</p>
 			</td>
 		</tr>
 		<tr>
-			<th><?php esc_html_e( 'MLM Type', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			<th><?php esc_html_e( 'MLM Type', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			<td class="tr2">
 				<?php
 					$rtwwwap_mlm_type_selected = isset( $rtwwwap_mlm[ 'mlm_type' ] ) ? $rtwwwap_mlm[ 'mlm_type' ] : 0;
@@ -41,35 +41,35 @@
 				<p>
 					<select class="rtwwwap_select2_mlm" id="" name="rtwwwap_mlm_opt[mlm_type]" >
 						<option value="0" <?php selected( $rtwwwap_mlm_type_selected, '0' ) ?> >
-							<?php esc_html_e( 'Binary', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Binary', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</option>
 						<option value="1" <?php selected( $rtwwwap_mlm_type_selected, '1' ) ?> >
-							<?php esc_html_e( 'Forced Matrix', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Forced Matrix', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</option>
 						<option value="2" <?php selected( $rtwwwap_mlm_type_selected, '2' ) ?> >
-							<?php esc_html_e( 'Unilevel', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Unilevel', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</option>
 						<option value="" disabled >
-							<?php esc_html_e( 'Unlimited (Available in PRO)', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Unlimited (Available in PRO)', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</option>
 					</select>
 				</p>
 				<br>
-				<div class="descr"><?php esc_html_e( 'NOTE : If you change MLM Plan then you need to activate/deactivate members to make the chains according to your plan selected', 'rtwalwm-wp-wc-affiliate-program' );?></div>
+				<div class="descr"><?php esc_html_e( 'NOTE : If you change MLM Plan then you need to activate/deactivate members to make the chains according to your plan selected', 'affiliaa-affiliate-program-with-mlm' );?></div>
 			</td>
 		</tr>
 	
 		<tr>
-			<th><?php esc_html_e( 'Depth', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			<th><?php esc_html_e( 'Depth', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			<td class="tr2">
 				<input class="rtwwwap_mlm_depth" max="3" data-rtwwwap_depth="<?php echo isset( $rtwwwap_mlm[ 'depth' ] ) ? esc_attr( $rtwwwap_mlm[ 'depth' ] ) : esc_attr( 1 ); ?>" type="number" min="1" name="rtwwwap_mlm_opt[depth]" value="<?php echo isset( $rtwwwap_mlm[ 'depth' ] ) ? esc_attr( $rtwwwap_mlm[ 'depth' ] ) : esc_attr( 1 ); ?>" />
-				<div class="descr"><?php esc_html_e( 'How many levels does this MLM can have? ( Note: By Default 1 )', 'rtwalwm-wp-wc-affiliate-program' );?></div>
-				<div class="descr"><?php esc_html_e( '"In PRO you can add more than 3 levels"', 'rtwalwm-wp-wc-affiliate-program' );?></div>
+				<div class="descr"><?php esc_html_e( 'How many levels does this MLM can have? ( Note: By Default 1 )', 'affiliaa-affiliate-program-with-mlm' );?></div>
+				<div class="descr"><?php esc_html_e( '"In PRO you can add more than 3 levels"', 'affiliaa-affiliate-program-with-mlm' );?></div>
 
 			</td>
 		</tr>
 		<tr class="<?php if( $rtwwwap_mlm_type_selected == 2 ){ echo 'rtwwwap_mlm_child_hidden'; } ?>" >
-			<th><?php esc_html_e( 'Child', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			<th><?php esc_html_e( 'Child', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			<td class="tr2">
 				<?php
 				
@@ -79,22 +79,22 @@
 						}
 					
 				?>
-				<input type="number" id="rtwwwap_mlm_child" min="1" name="rtwwwap_mlm_opt[child]" value="<?php echo isset( $rtwwwap_mlm[ 'child' ] ) ? esc_attr( $rtwwwap_mlm[ 'child' ] ) : esc_attr( 1 ); ?>" <?php if( $rtwwwap_max_child ){ echo "max=$rtwwwap_max_child"; } disabled( $rtwwwap_mlm_type_selected, 2 ); ?> />
-				<div class="descr"><?php esc_html_e( 'How many childs a User can have?', 'rtwalwm-wp-wc-affiliate-program' );?></div>
+				<input type="number" id="rtwwwap_mlm_child" min="1" name="rtwwwap_mlm_opt[child]" value="<?php echo isset( $rtwwwap_mlm[ 'child' ] ) ? esc_attr( $rtwwwap_mlm[ 'child' ] ) : esc_attr( 1 ); ?>" <?php if( $rtwwwap_max_child ){ ?>max="<?php echo esc_attr($rtwwwap_max_child); ?>" <?php } disabled( $rtwwwap_mlm_type_selected, 2 ); ?> />
+				<div class="descr"><?php esc_html_e( 'How many childs a User can have?', 'affiliaa-affiliate-program-with-mlm' );?></div>
 			</td>
 		</tr>
 		<tr>
 			<th>
-				<?php esc_html_e( 'Default Commission for a Level', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+				<?php esc_html_e( 'Default Commission for a Level', 'affiliaa-affiliate-program-with-mlm' ); ?>
 			</th>
 			<td class="tr2">
 				<table>
 					<thead>
 						<th>
-							<?php esc_html_e( 'Type', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Type', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</th>
 						<th>
-							<?php esc_html_e( 'Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Amount', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</th>
 					</thead>
 					<tbody>
@@ -105,15 +105,15 @@
 								?>
 								<select class="rtwwwap_select2_mlm_default_comm" id="" name="rtwwwap_mlm_opt[mlm_default_comm]" >
 									<option value="" disabled>
-										<?php esc_html_e( 'Percentage (Available in PRO)', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+										<?php esc_html_e( 'Percentage (Available in PRO)', 'affiliaa-affiliate-program-with-mlm' ); ?>
 									</option>
 									<option value="1" <?php selected( $rtwwwap_mlm_default_comm_selected, 1 ); ?> >
-										<?php esc_html_e( 'Fixed', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+										<?php esc_html_e( 'Fixed', 'affiliaa-affiliate-program-with-mlm' ); ?>
 									</option>
 								</select>
 							</td>
 							<td>
-								<input class="rtwwwap_mlm_default_comm_amount" type="number" min="1" step="0.01" name="rtwwwap_mlm_opt[mlm_default_comm_amount]" value="<?php echo isset( $rtwwwap_mlm[ 'mlm_default_comm_amount' ] ) ? $rtwwwap_mlm[ 'mlm_default_comm_amount' ] : esc_attr( 1 ) ?>" />
+								<input class="rtwwwap_mlm_default_comm_amount" type="number" min="1" step="0.01" name="rtwwwap_mlm_opt[mlm_default_comm_amount]" value="<?php echo isset( $rtwwwap_mlm[ 'mlm_default_comm_amount' ] ) ? esc_attr($rtwwwap_mlm[ 'mlm_default_comm_amount' ]) : esc_attr( 1 ) ?>" />
 							</td>
 						</tr>
 					</tbody>
@@ -122,19 +122,19 @@
 		</tr>
 		<tr>
 			<th>
-				<?php esc_html_e( 'MLM Levels', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+				<?php esc_html_e( 'MLM Levels', 'affiliaa-affiliate-program-with-mlm' ); ?>
 			</th>
 			<td class="tr2">
 				<table>
 					<thead>
 						<th>
-							<?php esc_html_e( 'Level', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Level', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</th>
 						<th>
-							<?php esc_html_e( 'Commission Type', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Commission Type', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</th>
 						<th>
-							<?php esc_html_e( 'Commission Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+							<?php esc_html_e( 'Commission Amount', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						</th>
 					</thead>
 					<tbody class="rtwwwap_tbody">
@@ -146,10 +146,10 @@
 							<td>
 								<select class="rtwwwap_select2_mlm_level_comm_type_hidden" id="" name="rtwwwap_mlm_opt[mlm_levels][mlm_level_comm_type]" >
 									<option value="" disabled>
-										<?php esc_html_e( 'Percentage (Available in PRO)', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+										<?php esc_html_e( 'Percentage (Available in PRO)', 'affiliaa-affiliate-program-with-mlm' ); ?>
 									</option>
 									<option value="1">
-										<?php esc_html_e( 'Fixed', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+										<?php esc_html_e( 'Fixed', 'affiliaa-affiliate-program-with-mlm' ); ?>
 									</option>
 								</select>
 							</td>
@@ -174,10 +174,10 @@
 											?>
 											<select class="rtwwwap_select2_mlm_level_comm_type" id="" name="rtwwwap_mlm_opt[mlm_levels][ <?php echo esc_attr( $rtwwwap_mlm_key ); ?> ][mlm_level_comm_type]" >
 												<option value="" disabled  >
-													<?php esc_html_e( 'Percentage (Available in PRO)', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+													<?php esc_html_e( 'Percentage (Available in PRO)', 'affiliaa-affiliate-program-with-mlm' ); ?>
 												</option>
 												<option value="1" <?php selected( $rtwwwap_selected_level, 1, true ); ?> >
-													<?php esc_html_e( 'Fixed', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+													<?php esc_html_e( 'Fixed', 'affiliaa-affiliate-program-with-mlm' ); ?>
 												</option>
 											</select>
 										</td>
@@ -201,10 +201,10 @@
 									<td>
 										<select class="rtwwwap_select2_mlm_level_comm_type" id="" name="rtwwwap_mlm_opt[mlm_levels][1][mlm_level_comm_type]" >
 											<option value="" disabled>
-												<?php esc_html_e( 'Percentage (Available in PRO)', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Percentage (Available in PRO)', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 											<option value="1">
-												<?php esc_html_e( 'Fixed', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+												<?php esc_html_e( 'Fixed', 'affiliaa-affiliate-program-with-mlm' ); ?>
 											</option>
 										</select>
 									</td>
@@ -221,7 +221,7 @@
 		</tr>
 		<tr>
 			<th>
-			<span id="rtwalwm_th_heading" class="rtwalwm_mlm_pro"><?php esc_html_e( 'User can change status of members in his chain?', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+			<span id="rtwalwm_th_heading" class="rtwalwm_mlm_pro"><?php esc_html_e( 'User can change status of members in his chain?', 'affiliaa-affiliate-program-with-mlm' ); ?>
 				<span id = "rtwalwm_pro_img"><img src="<?php echo esc_url( RTWALWM_URL.'assets/images/PRO.png' ); ?>" alt=""></span>
 						
 			</span>
@@ -236,13 +236,13 @@
 				?>
 				<p>
 					<span class="rtwalwm-custom-radio">
-						<input id="" type="radio" disabled/><?php esc_html_e( 'Yes', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<input id="" type="radio" disabled/><?php esc_html_e( 'Yes', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						<label for=""></label>
 					</span>
 				</p>
 				<p>
 					<span class="rtwalwm-custom-radio">
-						<input id="" type="radio" disabled /><?php esc_html_e( 'No', 'rtwalwm-wp-wc-affiliate-program' ); ?>
+						<input id="" type="radio" disabled /><?php esc_html_e( 'No', 'affiliaa-affiliate-program-with-mlm' ); ?>
 						<label for=""></label>
 					</span>
 				</p>

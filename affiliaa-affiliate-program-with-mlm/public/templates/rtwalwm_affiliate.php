@@ -44,12 +44,12 @@
 			$rtwalwm_html .= 	'<div id="rtwalwm_main_container">';
 			if( $rtwalwm_is_affiliate && !$rtwalwm_is_aff_approved ){
 				$rtwalwm_html .= 	'<div id="rtwalwm_not_approved">';
-				$rtwalwm_html .=	 esc_html__( 'Not approved yet', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_html .=	 esc_html__( 'Not approved yet', 'affiliaa-affiliate-program-with-mlm' );
 				$rtwalwm_html .=	'</div>';
 			}
 			elseif( !$rtwalwm_is_affiliate ){
 
-				$rtwalwm_become_button 		= isset( $rtwalwm_extra_features[ 'become_title' ] ) ? esc_html__( $rtwalwm_extra_features[ 'become_title' ]) : esc_html__( 'Become an Affiliate', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_become_button 		= isset( $rtwalwm_extra_features[ 'become_title' ] ) ? esc_html( $rtwalwm_extra_features[ 'become_title' ]) : esc_html__( 'Become an Affiliate', 'affiliaa-affiliate-program-with-mlm' );
 				
 				if($rtwalwm_extra_features[ 'become_title' ] != '' )
 				{
@@ -58,18 +58,18 @@
 				}
 				else
 				{
-					$rtwalwm_become_text  =  esc_html__( 'Become an Affiliate', 'rtwalwm-wp-wc-affiliate-program' );
+					$rtwalwm_become_text  =  esc_html__( 'Become an Affiliate', 'affiliaa-affiliate-program-with-mlm' );
 				}
-				$rtwalwm_default_benefits 	= sprintf( "<ul><li>%s</li><li>%s</li><li>%s</li></ul>", esc_html__( 'Earn extra money just by marketing our products with our affiliate tools', 'rtwalwm-wp-wc-affiliate-program' ), esc_html__( 'Earn wallet amount to buy products on our site', 'rtwalwm-wp-wc-affiliate-program' ), esc_html__( 'Signup Bonus when someone signup from your shared link', 'rtwalwm-wp-wc-affiliate-program' ) );
+				$rtwalwm_default_benefits 	= sprintf( "<ul><li>%s</li><li>%s</li><li>%s</li></ul>", esc_html__( 'Earn extra money just by marketing our products with our affiliate tools', 'affiliaa-affiliate-program-with-mlm' ), esc_html__( 'Earn wallet amount to buy products on our site', 'affiliaa-affiliate-program-with-mlm' ), esc_html__( 'Signup Bonus when someone signup from your shared link', 'affiliaa-affiliate-program-with-mlm' ) );
 
-				$rtwalwm_benefits 			= isset( $rtwalwm_extra_features[ 'aff_benefits' ] ) ? esc_html__( $rtwalwm_extra_features[ 'aff_benefits' ]) : $rtwalwm_default_benefits;
+				$rtwalwm_benefits 			= isset( $rtwalwm_extra_features[ 'aff_benefits' ] ) ? esc_html( $rtwalwm_extra_features[ 'aff_benefits' ]) : $rtwalwm_default_benefits;
 
 				$rtwalwm_html .= 	'<div id="rtwalwm_not_affiliate">';
 				$rtwalwm_html .=		'<div id="rtwalwm_become_affiliate">';
 				
 				$rtwalwm_html .=		'<input id="rtwalwm_affiliate_activate" type="button" name="" value="'.esc_attr( $rtwalwm_become_text ).'" data-rtwalwm_num="'.esc_attr($rtwalwm_user_id).'" />';
 
-				$rtwalwm_benefits_title = isset( $rtwalwm_extra_features[ 'benefits_title' ] ) ? esc_html__($rtwalwm_extra_features[ 'benefits_title' ]) : esc_html__( 'Benefits of becoming our Affiliate', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_benefits_title = isset( $rtwalwm_extra_features[ 'benefits_title' ] ) ? esc_html($rtwalwm_extra_features[ 'benefits_title' ]) : esc_html__( 'Benefits of becoming our Affiliate', 'affiliaa-affiliate-program-with-mlm' );
 
 				$rtwalwm_html .=		'</div>';
 				$rtwalwm_html .=		'<br>';
@@ -160,39 +160,39 @@
 				$rtwalwm_html .=			'<ul class="rtwalwm_menu">';
 				$rtwalwm_html .=				'<li class="'.$rtwalwm_overview_active.'">';
 				$rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_overview_url ).'">';
-				$rtwalwm_html .=						esc_html__( $rtwalwm_overview_label, 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_html .=						esc_html( $rtwalwm_overview_label );
 				$rtwalwm_html .=					'</a>';
 				$rtwalwm_html .=				'</li>';
 				$rtwalwm_html .=				'<li class="'.$rtwalwm_commissions_active.'">';
 				$rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_commissions_url ).'">';
-				$rtwalwm_html .=						esc_html__( $rtwalwm_commission_label, 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_html .=						esc_html( $rtwalwm_commission_label );
 				$rtwalwm_html .=					'</a>';
 				$rtwalwm_html .=				'</li>';
 				$rtwalwm_html .=				'<li class="'.$rtwalwm_affiliate_tools_active.'">';
 				$rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_affiliate_tools_url ).'">';
-				$rtwalwm_html .=						esc_html__( $rtwalwm_tools_label, 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_html .=						esc_html( $rtwalwm_tools_label );
 				$rtwalwm_html .=					'</a>';
 				$rtwalwm_html .=				'</li>';
 				// $rtwalwm_html .=				'<li class="'.$rtwalwm_download_active.'">';
 				// $rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_download_url ).'">';
-				// $rtwalwm_html .=						esc_html__( $rtwalwm_download_label, 'rtwalwm-wp-wc-affiliate-program' );
+				// $rtwalwm_html .=						esc_html__( $rtwalwm_download_label, 'affiliaa-affiliate-program-with-mlm' );
 				// $rtwalwm_html .=					'</a>';
 				// $rtwalwm_html .=				'</li>';
 				// $rtwalwm_html .=				'<li class="'.$rtwalwm_payout_active.'">';
 				// $rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_payout_url ).'">';
-				// $rtwalwm_html .=						esc_html__( $rtwalwm_payout_label, 'rtwalwm-wp-wc-affiliate-program' );
+				// $rtwalwm_html .=						esc_html__( $rtwalwm_payout_label, 'affiliaa-affiliate-program-with-mlm' );
 				// $rtwalwm_html .=					'</a>';
 				// $rtwalwm_html .=				'</li>';
 				$rtwalwm_html .=				'<li class="'.$rtwalwm_profile_active.'">';
 				$rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_profile_url ).'">';
-				$rtwalwm_html .=						esc_html__( $rtwalwm_profile_label, 'rtwalwm-wp-wc-affiliate-program' );	
+				$rtwalwm_html .=						esc_html( $rtwalwm_profile_label );	
 				$rtwalwm_html .=					'</a>';
 				$rtwalwm_html .=				'</li>';
 				if(!empty($rtwalwm_custom_banner) )
 				{
 				$rtwalwm_html .=				'<li class="'.$rtwalwm_custom_banner_active.'">';
 				$rtwalwm_html .=					'<a class="rtwalwm_nav_tab" href="'.esc_url( $rtwalwm_custom_banner_url ).'">';
-				$rtwalwm_html .=						esc_html__( $rtwalwm_custom_banner_label, 'rtwalwm-wp-wc-affiliate-program' );	
+				$rtwalwm_html .=						esc_html( $rtwalwm_custom_banner_label );	
 				$rtwalwm_html .=					'</a>';
 				$rtwalwm_html .=				'</li>';
 				}

@@ -32,9 +32,9 @@
 
 		$(document).ready(function () {
 
-			$(".rtw_close_popup").on("click",function(){
-				$(".rtw_popup").hide();
-			});
+			// $(".rtw_close_popup").on("click",function(){
+			// 	$(".rtw_popup").hide();
+			// });
 
 			$('.rtwalwm-extra-features-wrap > ul >li').on('click', function () {
 				$('.rtwalwm-extra-features-wrap > ul >li').removeClass('active');

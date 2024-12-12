@@ -6,7 +6,7 @@ if( RTWALWM_IS_WOO == 1 ){
 	$rtwalwm_currency_sym = esc_html( get_woocommerce_currency_symbol() );
 }
 else{
-	$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'rtwalwm-wp-wc-affiliate-program' );
+	$rtwalwm_currency_sym 	= esc_html__( '&#36;', 'affiliaa-affiliate-program-with-mlm' );
 
 }
 
@@ -37,19 +37,19 @@ if( !isset( $_GET[ 'rtwalwm_tab' ] ) || ( isset( $_GET[ 'rtwalwm_tab' ] ) && $_G
 	$rtwalwm_html1 = '';
 	$rtwalwm_html1 .= 	'<div id="rtwalwm_overview">';
 	$rtwalwm_html1 .= 		'<div class="rtwalwm-overview-box" id="rtwalwm_total_referral">';
-	$rtwalwm_html1 .= 			sprintf( '<span>%u</span> %s', ( $rtwalwm_total_referrals ) ? $rtwalwm_total_referrals : '0', esc_html__( 'Total Referrals', 'rtwalwm-wp-wc-affiliate-program' ) );
+	$rtwalwm_html1 .= 			sprintf( '<span>%u</span> %s', ( $rtwalwm_total_referrals ) ? $rtwalwm_total_referrals : '0', esc_html__( 'Total Referrals', 'affiliaa-affiliate-program-with-mlm' ) );
 	$rtwalwm_html1 .= 		'</div>';
 	$rtwalwm_html1 .= 		'<div class="rtwalwm-overview-box" id="rtwalwm_total_commission">';
-	$rtwalwm_html1 .= 			sprintf( '<span> '.$rtwalwm_currency_sym.number_format( $rtwalwm_total_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator) .'</span> %s', esc_html__( 'Total Commission', 'rtwalwm-wp-wc-affiliate-program' ) );
+	$rtwalwm_html1 .= 			sprintf( '<span> '.$rtwalwm_currency_sym.number_format( $rtwalwm_total_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator) .'</span> %s', esc_html__( 'Total Commission', 'affiliaa-affiliate-program-with-mlm' ) );
 	$rtwalwm_html1 .= 		'</div>';
 	$rtwalwm_html1 .= 		'<div class="rtwalwm-overview-box" id="rtwalwm_wallet">';
-	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format($rtwalwm_wallet,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Wallet', 'rtwalwm-wp-wc-affiliate-program' ) );
+	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format($rtwalwm_wallet,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Wallet', 'affiliaa-affiliate-program-with-mlm' ) );
 	$rtwalwm_html1 .= 		'</div>';
 	$rtwalwm_html1 .= 		'<div class="rtwalwm-overview-box" id="rtwalwm_approved_commission">';
-	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format( $rtwalwm_approved_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Approved Commission', 'rtwalwm-wp-wc-affiliate-program' ) );
+	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format( $rtwalwm_approved_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Approved Commission', 'affiliaa-affiliate-program-with-mlm' ) );
 	$rtwalwm_html1 .= 		'</div>';
 	$rtwalwm_html1 .= 		'<div class="rtwalwm-overview-box" id="rtwalwm_pending_commission">';
-	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format( $rtwalwm_pending_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Pending Commission', 'rtwalwm-wp-wc-affiliate-program' ) );
+	$rtwalwm_html1 .= 			sprintf( '<span>'.$rtwalwm_currency_sym.number_format( $rtwalwm_pending_comm,$rtwalwm_decimal_place,$rtwalwm_decimal_separator, $rtwalwm_thousand_separator).'</span> %s', esc_html__( 'Pending Commission', 'affiliaa-affiliate-program-with-mlm' ) );
 	$rtwalwm_html1 .= 		'</div>';
 	$rtwalwm_html1 .= 	'</div>';
 
@@ -66,28 +66,28 @@ if( !isset( $_GET[ 'rtwalwm_tab' ] ) || ( isset( $_GET[ 'rtwalwm_tab' ] ) && $_G
 
 		$rtwalwm_html1 .= 	'<div  id="rtwalwm_create_coupon_container">';
 		$rtwalwm_html1 .= 		'<p class="rtwalwm_create_coupon_text">';
-		$rtwalwm_html1 .= 			sprintf( '%s', esc_html__( 'Referrals', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_html1 .= 			sprintf( '%s', esc_html__( 'Referrals', 'affiliaa-affiliate-program-with-mlm' ) );
 		$rtwalwm_html1 .= 		'</p>';
 		$rtwalwm_html1 .= 	'</div>';
 		$rtwalwm_html1 .= 	'<table id="rtwalwm_referrals_table">';
 		$rtwalwm_html1 .= 		'<thead>';
 		$rtwalwm_html1 .= 			'<tr>';
 		$rtwalwm_html1 .= 				'<th>';
-		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Type', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Type', 'affiliaa-affiliate-program-with-mlm' ) );
 		$rtwalwm_html1 .= 				'</th>';
 		$rtwalwm_html1 .= 				'<th>';
-		$rtwalwm_html1 .= 					sprintf( '%s (%s)', esc_html__( 'Amount', 'rtwalwm-wp-wc-affiliate-program' ), $rtwalwm_currency_sym );
+		$rtwalwm_html1 .= 					sprintf( '%s (%s)', esc_html__( 'Amount', 'affiliaa-affiliate-program-with-mlm' ), $rtwalwm_currency_sym );
 		$rtwalwm_html1 .= 				'</th>';
 		$rtwalwm_html1 .= 				'<th>';
-		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Date', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Date', 'affiliaa-affiliate-program-with-mlm' ) );
 		$rtwalwm_html1 .= 				'</th>';
 		$rtwalwm_html1 .= 				'<th >';
 		// update code starts
-		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Commission From', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Commission From', 'affiliaa-affiliate-program-with-mlm' ) );
 		$rtwalwm_html1 .= 				'</th>';
 		$rtwalwm_html1 .= 				'<th >';
 		// ends
-		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Status', 'rtwalwm-wp-wc-affiliate-program' ) );
+		$rtwalwm_html1 .= 					sprintf( '%s', esc_html__( 'Status', 'affiliaa-affiliate-program-with-mlm' ) );
 		$rtwalwm_html1 .= 				'</th >';
 		$rtwalwm_html1 .= 			'</tr>';
 		$rtwalwm_html1 .= 		'</thead>';
@@ -96,44 +96,44 @@ if( !isset( $_GET[ 'rtwalwm_tab' ] ) || ( isset( $_GET[ 'rtwalwm_tab' ] ) && $_G
 				
 			$rtwalwm_html1 .= 		'<tr>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Referral Bonus', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Referral Bonus', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( '10$', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( '10$', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'January 1, 2020 12:00 am', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'January 1, 2020 12:00 am', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td >';
 			// update code starts
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Paul Mercer', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Paul Mercer', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			// ends
 			$rtwalwm_html1 .= 			'<td >';
 			$rtwalwm_html1 .= 					'<div >';
-			$rtwalwm_html1 .=					sprintf( '%s', esc_html__( 'Pending', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=					sprintf( '%s', esc_html__( 'Pending', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .=        		'</div>';
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 		'</tr>';
 
 			$rtwalwm_html1 .= 		'<tr>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Referral Bonus', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Referral Bonus', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( '15$', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( '15$', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'March 1, 2023 12:00 am', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'March 1, 2023 12:00 am', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td >';
 			// update code starts
 			$rtwalwm_html1 .= 			'<td>';
-			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Jordon cox', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=				sprintf( '%s', esc_html__( 'Jordon cox', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .= 			'</td>';
 			// ends
 			$rtwalwm_html1 .= 			'<td >';
 			$rtwalwm_html1 .= 					'<div >';
-			$rtwalwm_html1 .=					sprintf( '%s', esc_html__( 'Pending', 'rtwalwm-wp-wc-affiliate-program' ) );
+			$rtwalwm_html1 .=					sprintf( '%s', esc_html__( 'Pending', 'affiliaa-affiliate-program-with-mlm' ) );
 			$rtwalwm_html1 .=        		'</div>';
 			$rtwalwm_html1 .= 			'</td>';
 			$rtwalwm_html1 .= 		'</tr>';
@@ -170,7 +170,7 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'commissions' )
 
 			if( $rtwalwm_key == 'all_commission' ){
 				$rtwalwm_html1 .= 	'<div class="rtwalwm_commissionws_wrapper">';
-				$rtwalwm_html1 .= 		esc_html__( 'Commission on all Products', 'rtwalwm-wp-wc-affiliate-program' );
+				$rtwalwm_html1 .= 		esc_html__( 'Commission on all Products', 'affiliaa-affiliate-program-with-mlm' );
 				$rtwalwm_html1 .= 		'<span>';
 				$rtwalwm_html1 .= 		sprintf( '%s%u', $rtwalwm_currency_sym, esc_html( $rtwalwm_value ) );
 				$rtwalwm_html1 .= 		'</span>';
@@ -231,23 +231,23 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'commissions' )
 					$rtwalwm_html1 .= 	'<thead>';
 					$rtwalwm_html1 .= 		'<tr>';
 					$rtwalwm_html1 .= 			'<th colspan="3">';
-					$rtwalwm_html1 .= 		 		esc_html__( 'Per Product Commission' );
+					$rtwalwm_html1 .= 		 		esc_html__( 'Per Product Commission', 'affiliaa-affiliate-program-with-mlm' );
 					$rtwalwm_html1 .= 			'</th>';
 					$rtwalwm_html1 .= 		'</tr>';
 					$rtwalwm_html1 .= 	'</thead>';
 					$rtwalwm_html1 .= 	'<tbody>';
 					$rtwalwm_html1 .= 		'<tr>';
 					$rtwalwm_html1 .= 		'<td><b>';
-					$rtwalwm_html1 .= 		 		esc_html__( 'Product Name', 'rtwalwm-wp-wc-affiliate-program' );
+					$rtwalwm_html1 .= 		 		esc_html__( 'Product Name', 'affiliaa-affiliate-program-with-mlm' );
 					$rtwalwm_html1 .= 			'</b></td>';
 				
 						$rtwalwm_html1 .= 	'<td><b>';
-						$rtwalwm_html1 .= 		 	esc_html__( 'Percentage commission (%)', 'rtwalwm-wp-wc-affiliate-program' );
+						$rtwalwm_html1 .= 		 	esc_html__( 'Percentage commission (%)', 'affiliaa-affiliate-program-with-mlm' );
 						$rtwalwm_html1 .= 		'</b></td>';
 			
 
 						$rtwalwm_html1 .= 	'<td><b>';
-						$rtwalwm_html1 .= 		 	esc_html__( "Fixed commission ($rtwalwm_currency_sym)", 'rtwalwm-wp-wc-affiliate-program' );
+						$rtwalwm_html1 .= 		 	sprintf( '%s(%s)', esc_html__( "Fixed commission", 'affiliaa-affiliate-program-with-mlm' ), esc_html($rtwalwm_currency_sym));
 						$rtwalwm_html1 .= 		'</b></td>';
 					
 					    $rtwalwm_html1 .= 		'</tr>';
@@ -277,7 +277,7 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'commissions' )
 							}
 						}
 						else{
-						$rtwalwm_html1 .= 		'<td colspan="3" class="rtwalwm_no_comm">'.esc_html__( 'Specific Product commission not set. Check Category Commissions' ).'</td>';
+						$rtwalwm_html1 .= 		'<td colspan="3" class="rtwalwm_no_comm">'.esc_html__( 'Specific Product commission not set. Check Category Commissions', 'affiliaa-affiliate-program-with-mlm' ).'</td>';
 						$rtwalwm_html1 .= 	'</tr>';
 						}
 						$rtwalwm_html1 .= 	'</tbody>';
@@ -287,7 +287,7 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'commissions' )
 	}
 	else{
 		$rtwalwm_html1 .= 	'<div class="rtwalwm_commissionws_wrapper">';
-		$rtwalwm_html1 .= 		esc_html__( 'No Commission is set on any Product', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .= 		esc_html__( 'No Commission is set on any Product', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .= 		'<span>';
 		$rtwalwm_html1 .= 	'</div>';
 	}
@@ -344,18 +344,18 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'affiliate_tool
 
 	$rtwalwm_html1 = '';
 	$rtwalwm_html1 .=	'<div id="rtwalwm_affiliates">';
-	$rtwalwm_html1 .=	  	'<h3>'.esc_html__( 'Generate links', 'rtwalwm-wp-wc-affiliate-program' ).'</h3>';
+	$rtwalwm_html1 .=	  	'<h3>'.esc_html__( 'Generate links', 'affiliaa-affiliate-program-with-mlm' ).'</h3>';
 	$rtwalwm_html1 .=	  	'<div id="rtwalwm_aff_links">';
-	$rtwalwm_html1 .=	    	'<input type="text" id="rtwalwm_aff_link_input" placeholder="'.esc_attr__( 'Enter any product\'s URL from this website', 'rtwalwm-wp-wc-affiliate-program' ).'" value="'.esc_attr( home_url() ).'"/>';
+	$rtwalwm_html1 .=	    	'<input type="text" id="rtwalwm_aff_link_input" placeholder="'.esc_attr__( 'Enter any product\'s URL from this website', 'affiliaa-affiliate-program-with-mlm' ).'" value="'.esc_attr( home_url() ).'"/>';
 	$rtwalwm_html1 .=	    	'<p id="rtwalwm_generated_link"></p>';
-	$rtwalwm_html1 .=	    	'<input type="button" id="rtwalwm_generate_button" data-rtwalwm_aff_id="'.esc_attr( get_current_user_id() ).'" data-rtwalwm_aff_name="'.esc_attr( $rtwalwm_aff_custom_code ).'" value="'.esc_attr__( 'Generate link', 'rtwalwm-wp-wc-affiliate-program' ).'" />';
+	$rtwalwm_html1 .=	    	'<input type="button" id="rtwalwm_generate_button" data-rtwalwm_aff_id="'.esc_attr( get_current_user_id() ).'" data-rtwalwm_aff_name="'.esc_attr( $rtwalwm_aff_custom_code ).'" value="'.esc_attr__( 'Generate link', 'affiliaa-affiliate-program-with-mlm' ).'" />';
 	$rtwalwm_html1 .=	  	'<div class="rtwalwm_span_copied">';
-	$rtwalwm_html1 .=	    	'<input type="button" id="rtwalwm_copy_to_clip" value="'.esc_attr__( 'Copy link', 'rtwalwm-wp-wc-affiliate-program' ).'" />';
-	$rtwalwm_html1 .=	    	'<span id="rtwalwm_copy_tooltip_link">'.esc_html__( 'Copied', 'rtwalwm-wp-wc-affiliate-program' ).'</span>';
+	$rtwalwm_html1 .=	    	'<input type="button" id="rtwalwm_copy_to_clip" value="'.esc_attr__( 'Copy link', 'affiliaa-affiliate-program-with-mlm' ).'" />';
+	$rtwalwm_html1 .=	    	'<span id="rtwalwm_copy_tooltip_link">'.esc_html__( 'Copied', 'affiliaa-affiliate-program-with-mlm' ).'</span>';
 	$rtwalwm_html1 .=	  	'</div>';
 
 	if( $rtwalwm_qr_code_setting ){
-		$rtwalwm_html1 .=	    '<input type="button" id="rtwalwm_generate_qr" value="'.esc_attr__( 'Create QR Code', 'rtwalwm-wp-wc-affiliate-program' ).'" />';
+		$rtwalwm_html1 .=	    '<input type="button" id="rtwalwm_generate_qr" value="'.esc_attr__( 'Create QR Code', 'affiliaa-affiliate-program-with-mlm' ).'" />';
 	}
 	$rtwalwm_html1 .=	  	'</div>';
 
@@ -370,33 +370,33 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'affiliate_tool
 		$rtwalwm_html1 .=	  		'<div class="rtwalwm_btn">';
 		$rtwalwm_html1 .=	  			'<a class="twitter-share-button rtwalwm_twitter" href="javascript:void(0);">';
 		$rtwalwm_html1 .=	  				'<img src="'.$rtwalwm_twitter_img_url.'">';
-		$rtwalwm_html1 .=	  				esc_html__( 'Tweet', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .=	  				esc_html__( 'Tweet', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .=	  			'</a>';
 		$rtwalwm_html1 .=	  		'</div>';
 		$rtwalwm_html1 .=	  		'<a class="rtwalwm_fb_share" href="javascript:void(0); ">';
 		$rtwalwm_html1 .=	  			'<img src="'.$rtwalwm_facebook_img_url.'">';
-		$rtwalwm_html1 .=	  			esc_html__( 'Facebook', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .=	  			esc_html__( 'Facebook', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .=	  		'</a>';
 		$rtwalwm_html1 .=	  		'<a class="rtwalwm_mail_button" href="javascript:void(0);" rel="nofollow">';
 		$rtwalwm_html1 .=	  			'<img src ="'.$rtwalwm_mail_img_url.'">';
-		$rtwalwm_html1 .=	  			esc_html__( 'Mail', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .=	  			esc_html__( 'Mail', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .=	  		'</a>';
 		$rtwalwm_html1 .=	  		'<a class="rtwalwm_whatsapp_share" href="javascript:void(0);">';
 		$rtwalwm_html1 .=	  			'<img src="'.$rtwalwm_whatsapp_img_url.'">';
-		$rtwalwm_html1 .=	  			esc_html__( 'Whatsapp', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .=	  			esc_html__( 'Whatsapp', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .=	  		'</a>';
 		$rtwalwm_html1 .=	  	'</div>';
 	}
 
 		//qrcode
 	if( $rtwalwm_qr_code_setting ){
-		$rtwalwm_html1 .=	'<div id="rtwalwm_qrcode_main"><a id="rtwalwm_qrcode"></a><a id="rtwalwm_download_qr" download><span class="rtwalwm_download_qr">'.esc_html__( 'Download QR', 'rtwalwm-wp-wc-affiliate-program' ).'</span></a></div>';
+		$rtwalwm_html1 .=	'<div id="rtwalwm_qrcode_main"><a id="rtwalwm_qrcode"></a><a id="rtwalwm_download_qr" download><span class="rtwalwm_download_qr">'.esc_html__( 'Download QR', 'affiliaa-affiliate-program-with-mlm' ).'</span></a></div>';
 	}
 
 	$rtwalwm_html1 .=	  	'</div>';
-	$rtwalwm_html1 .=	  	'<h3>'.esc_html__( 'Create banners', 'rtwalwm-wp-wc-affiliate-program' ).'</h3>';
+	$rtwalwm_html1 .=	  	'<h3>'.esc_html__( 'Create banners', 'affiliaa-affiliate-program-with-mlm' ).'</h3>';
 	$rtwalwm_html1 .=	  	'<div id="rtwalwm_banner_links">';
-	$rtwalwm_html1 .=	  		'<input type="text" id="rtwalwm_banner_prod_search" placeholder="'.esc_attr__( 'Search Product', 'rtwalwm-wp-wc-affiliate-program' ).'" />';
+	$rtwalwm_html1 .=	  		'<input type="text" id="rtwalwm_banner_prod_search" placeholder="'.esc_attr__( 'Search Product', 'affiliaa-affiliate-program-with-mlm' ).'" />';
 	$rtwalwm_html1 .=	   		'<select class="rtwalwm_select_cat" id="" name="rtwalwm_select_cat">';
 	if( !empty( $rtwalwm_all_categories ) ){
 		
@@ -418,12 +418,12 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'affiliate_tool
 	}
 	else{
 		$rtwalwm_html1 .=		'<option value="" >';
-		$rtwalwm_html1 .=			esc_html__( 'No Category', 'rtwalwm-wp-wc-affiliate-program' );
+		$rtwalwm_html1 .=			esc_html__( 'No Category', 'affiliaa-affiliate-program-with-mlm' );
 		$rtwalwm_html1 .= 		'</option>';
 	}
 	$rtwalwm_html1 .=	  		'</select>';
 	$rtwalwm_html1 .=	  		'<div>';
-	$rtwalwm_html1 .=	    		'<input type="button" id="rtwalwm_search_button" value="'.esc_attr__( 'Search', 'rtwalwm-wp-wc-affiliate-program' ).'" />';
+	$rtwalwm_html1 .=	    		'<input type="button" id="rtwalwm_search_button" value="'.esc_attr__( 'Search', 'affiliaa-affiliate-program-with-mlm' ).'" />';
 	$rtwalwm_html1 .=	  		'</div>';
 	$rtwalwm_html1 .=	  	'</div>';
 	$rtwalwm_html1 .=	  	'<div id="rtwalwm_search_main_container">';
@@ -455,20 +455,20 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'affiliate_tool
 		$rtwalwm_html1 = '';
 		$rtwalwm_html1 = 	'<form action="" method="post">';
 		$rtwalwm_html1 .= 	'<div id="rtwalwm_mail_optIn">';
-		$rtwalwm_html1 .= 		'<h3>'.esc_html__( "Profile", "rtwalwm-wp-wc-affiliate-program" ).'</h3>';
-		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Username", "rtwalwm-wp-wc-affiliate-program" ).'</label>';
-		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="user_login" placeholder="'.esc_attr__( "Username", "rtwalwm-wp-wc-affiliate-program" ).'" value="'.esc_attr($rtwalwm_userdata['nickname'][0]).'" disabled></div>';
+		$rtwalwm_html1 .= 		'<h3>'.esc_html__( "Profile", "affiliaa-affiliate-program-with-mlm" ).'</h3>';
+		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Username", "affiliaa-affiliate-program-with-mlm" ).'</label>';
+		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="user_login" placeholder="'.esc_attr__( "Username", "affiliaa-affiliate-program-with-mlm" ).'" value="'.esc_attr($rtwalwm_userdata['nickname'][0]).'" disabled></div>';
 	
-		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Email", "rtwalwm-wp-wc-affiliate-program" ).'</label>';
-		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-envelope"></i></span><input type="email" name="user_email" placeholder="'.esc_attr__( "Email", "rtwalwm-wp-wc-affiliate-program" ).'" value="'.esc_attr($rtwalwm_user->user_email).'" disabled></div>';
+		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Email", "affiliaa-affiliate-program-with-mlm" ).'</label>';
+		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-envelope"></i></span><input type="email" name="user_email" placeholder="'.esc_attr__( "Email", "affiliaa-affiliate-program-with-mlm" ).'" value="'.esc_attr($rtwalwm_user->user_email).'" disabled></div>';
 	
-		$rtwalwm_html1 .= 					'<label>'.esc_html__( "First Name", "rtwalwm-wp-wc-affiliate-program" ).'</label>';
-		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="first_name" placeholder="'.esc_attr__( "First Name", "rtwalwm-wp-wc-affiliate-program" ).'" value="'.esc_attr($rtwalwm_userdata['first_name'][0]).'"></div>';
+		$rtwalwm_html1 .= 					'<label>'.esc_html__( "First Name", "affiliaa-affiliate-program-with-mlm" ).'</label>';
+		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="first_name" placeholder="'.esc_attr__( "First Name", "affiliaa-affiliate-program-with-mlm" ).'" value="'.esc_attr($rtwalwm_userdata['first_name'][0]).'"></div>';
 	
-		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Last Name", "rtwalwm-wp-wc-affiliate-program" ).'</label>';
-		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="last_name" placeholder="'.esc_attr__( "Last Name", "rtwalwm-wp-wc-affiliate-program" ).'" value="'.esc_attr($rtwalwm_userdata['last_name'][0]).'"></div>';
+		$rtwalwm_html1 .= 					'<label>'.esc_html__( "Last Name", "affiliaa-affiliate-program-with-mlm" ).'</label>';
+		$rtwalwm_html1 .= 			'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="last_name" placeholder="'.esc_attr__( "Last Name", "affiliaa-affiliate-program-with-mlm" ).'" value="'.esc_attr($rtwalwm_userdata['last_name'][0]).'"></div>';
 		$rtwalwm_html1 .= 		'</div">';
-		$rtwalwm_html1 .= 		'<div><input type="submit" class="rtwalwm_profile_save" value="'.esc_attr__( "Update Details", "rtwalwm-wp-wc-affiliate-program" ).'" id="rtwalwm_profile_save" name="rtwalwm_profile_save"></div>';
+		$rtwalwm_html1 .= 		'<div><input type="submit" class="rtwalwm_profile_save" value="'.esc_attr__( "Update Details", "affiliaa-affiliate-program-with-mlm" ).'" id="rtwalwm_profile_save" name="rtwalwm_profile_save"></div>';
 		$rtwalwm_html1 .= 	'</form>';
 		return $rtwalwm_html1;
 	}
@@ -497,17 +497,17 @@ if( isset( $_GET[ 'rtwalwm_tab' ] ) && $_GET[ 'rtwalwm_tab' ] == 'custom_banner'
 		
 	
 			$rtwalwm_html1 .= 	'<div class ="rtwalwm_custom_banner_product" style=" width:'.$rtwalwm_image_width.'px;height:auto;">';
-			$rtwalwm_html1 .=        '<div class = "rtwalwm_banner_no">'.esc_html("Banner No.").esc_attr__($rtwalwm_count).'</div>';
+			$rtwalwm_html1 .=        '<div class = "rtwalwm_banner_no">'.esc_html("Banner No.", 'affiliaa-affiliate-program-with-mlm').esc_attr($rtwalwm_count).'</div>';
 			$rtwalwm_html1 .= 				'<div class ="rtwalwm_custom_banner_product_image" style="height:'.$rtwalwm_image_height.'px;">';
 			$rtwalwm_html1 .=					'<img class="rtwalwm_banner_image"  src="'.$rtwalwm_image_src.'" >';
 			$rtwalwm_html1 .=				 '</div>';
 			$rtwalwm_html1 .=				'<div>';
 			$rtwalwm_html1 .=				'<span class="rtwalwm_image_size_detail">Image Size : '.$value['image_width'].'</span>';
-			$rtwalwm_html1 .=				'<span class="rtwalwm_image_size_detail"> '.esc_html__( " x ", "rtwalwm-wp-wc-affiliate-program" ).$value['image_height'].'</span>';
+			$rtwalwm_html1 .=				'<span class="rtwalwm_image_size_detail"> '.esc_html__( " x ", "affiliaa-affiliate-program-with-mlm" ).$value['image_height'].'</span>';
 			$rtwalwm_html1 .=				'</div>';
-			$rtwalwm_html1 .=				 '<label class="rtwalwm_copy_info" >'.esc_html__( " Copy and paste the code into your Website", "rtwalwm-wp-wc-affiliate-program" ).'</label>';	
-			$rtwalwm_html1 .=				 '<div class="rtwalwm_banner_copy_text" >'.esc_html__( "Copied", "rtwalwm-wp-wc-affiliate-program" ).'</div>';
-			$rtwalwm_html1 .= 			'<button  data-image_id ="'.esc_attr($rtwalwm_image_src).'" data-target_link ="'.esc_attr($value['target_link']).'" name="rtwalwm_custom_banner_copy_html" class="rtwalwm_custom_banner_copy_html" data-image_width ="'.esc_attr($value['image_width']).'" data-image_height ="'.esc_attr($value['image_height']).'">'.esc_html__( "COPY HTML", "rtwalwm-wp-wc-affiliate-program" ).'</button>';
+			$rtwalwm_html1 .=				 '<label class="rtwalwm_copy_info" >'.esc_html__( " Copy and paste the code into your Website", "affiliaa-affiliate-program-with-mlm" ).'</label>';	
+			$rtwalwm_html1 .=				 '<div class="rtwalwm_banner_copy_text" >'.esc_html__( "Copied", "affiliaa-affiliate-program-with-mlm" ).'</div>';
+			$rtwalwm_html1 .= 			'<button  data-image_id ="'.esc_attr($rtwalwm_image_src).'" data-target_link ="'.esc_attr($value['target_link']).'" name="rtwalwm_custom_banner_copy_html" class="rtwalwm_custom_banner_copy_html" data-image_width ="'.esc_attr($value['image_width']).'" data-image_height ="'.esc_attr($value['image_height']).'">'.esc_html__( "COPY HTML", "affiliaa-affiliate-program-with-mlm" ).'</button>';
 			$rtwalwm_html1 .= 	'</div>'; 
 
 			$rtwalwm_count  = $rtwalwm_count + 1;	 

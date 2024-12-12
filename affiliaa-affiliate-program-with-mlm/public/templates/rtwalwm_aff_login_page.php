@@ -52,16 +52,16 @@
 			$rtwalwm_html .= 					'<h2>';
 		
 			
-			$rtwalwm_html .= 					esc_html__( "Login your Account", "rtwalwm-wp-wc-affiliate-program" );
+			$rtwalwm_html .= 					esc_html__( "Login your Account", "affiliaa-affiliate-program-with-mlm" );
 		
 			$rtwalwm_html .= 					'</h2>';
 
 			$rtwalwm_html .= 				'</div>';
 			$rtwalwm_html .= 				'<form action="'.esc_url( site_url("wp-login.php", "login_post") ).'" method="post">';
-			$rtwalwm_html .= 					'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="log" placeholder="'.esc_attr__( "Username or Email Address", "rtwalwm-wp-wc-affiliate-program" ).'" id="log" class="input" required /></div>';
+			$rtwalwm_html .= 					'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-user"></i></span><input type="text" name="log" placeholder="'.esc_attr__( "Username or Email Address", "affiliaa-affiliate-program-with-mlm" ).'" id="log" class="input" required /></div>';
 
-			$rtwalwm_html .= 					'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-envelope"></i></span><input type="password" name="pwd" placeholder="'.esc_attr__( "Password", "rtwalwm-wp-wc-affiliate-program" ).'" id="pwd" class="input" required /></div>';
-			$rtwalwm_html .= 					'<div><input type="submit" id="one" value="'.esc_attr__( "Login", "rtwalwm-wp-wc-affiliate-program" ).'" id="rtwalwm-Login" /></div>';
+			$rtwalwm_html .= 					'<div class="rtwalwm-text"><span class="rtwalwm-text-icon"><i class="fas fa-envelope"></i></span><input type="password" name="pwd" placeholder="'.esc_attr__( "Password", "affiliaa-affiliate-program-with-mlm" ).'" id="pwd" class="input" required /></div>';
+			$rtwalwm_html .= 					'<div><input type="submit" id="one" value="'.esc_attr__( "Login", "affiliaa-affiliate-program-with-mlm" ).'" id="rtwalwm-Login" /></div>';
 			$rtwalwm_html .=                	'<input type="hidden" value="'.esc_attr(remove_query_arg(array("login_errors","failed"),$rtwalwm_redirect_url)).'" name="redirect_to">';
 			$rtwalwm_html .=                	'<input type="hidden" name="user-cookie" value="1" />';
 			$rtwalwm_html .= 				'</form>';

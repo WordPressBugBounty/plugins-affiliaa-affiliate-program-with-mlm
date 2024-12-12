@@ -19,16 +19,16 @@
 
 <p class="rtwalwm_add_new_affiliate">
 	<a href="<?php echo esc_url( $rtwalwm_new_url ); ?>" target="_blank">
-		<input type="button" value="<?php esc_attr_e( 'Add New Affiliate', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button" name="rtwalwm_add_new_affiliate" />
+		<input type="button" value="<?php esc_attr_e( 'Add New Affiliate', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button" name="rtwalwm_add_new_affiliate" />
 	</a>
 
-	<input type="button" value="<?php esc_attr_e( 'Generate Affiliate CSV', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button rtwalwm_generate_csv_affiliate" name="rtwalwm_add_new_affiliate" />
+	<input type="button" value="<?php esc_attr_e( 'Generate Affiliate CSV', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button rtwalwm_generate_csv_affiliate" name="rtwalwm_add_new_affiliate" />
 
 	<?php 
 		$rtwalwm_extra_features = get_option( 'rtwwwap_extra_features_opt' );
 		if( isset($rtwalwm_extra_features[ 'aff_verify' ]) && $rtwalwm_extra_features[ 'aff_verify' ] == 1 ){
 	?>
-		<input type="button" value="<?php esc_attr_e( 'Approve all marked Affiliates', 'rtwalwm-wp-wc-affiliate-program' ); ?>" class="rtwalwm-button rtwalwm_approve_all_affiliate" name="rtwalwm_approve_all_affiliate" />
+		<input type="button" value="<?php esc_attr_e( 'Approve all marked Affiliates', 'affiliaa-affiliate-program-with-mlm' ); ?>" class="rtwalwm-button rtwalwm_approve_all_affiliate" name="rtwalwm_approve_all_affiliate" />
 	<?php } ?>
 </p>
 
@@ -43,19 +43,19 @@
 			    			<label for="rtwalwm_checkbox-th"></label>
 			    		</span>
 			    	</th>
-			    	<th><?php esc_html_e( 'ID', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Username', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Name', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'ID', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Username', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Name', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			    
-			    	<th><?php esc_html_e( 'Email', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'Email', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 
-					<th><?php esc_html_e( 'Wp role', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+					<th><?php esc_html_e( 'Wp role', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 
-					<th><?php esc_html_e( 'Parent Id', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Parent Name', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Paid Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Unpaid Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Actions', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+					<th><?php esc_html_e( 'Parent Id', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Parent Name', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Paid Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Unpaid Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Actions', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</thead>
 		  	<tbody>
@@ -120,25 +120,25 @@
 								<?php
 									
 
-								echo esc_html_e('MLM not active', 'rtwalwm-wp-wc-affiliate-program');
+								echo esc_html_e('MLM not active', 'affiliaa-affiliate-program-with-mlm');
 
  								?>
 					    	</td>
 							<td>
 							<?php	
-								echo esc_html_e('MLM not active', 'rtwalwm-wp-wc-affiliate-program');
+								echo esc_html_e('MLM not active', 'affiliaa-affiliate-program-with-mlm');
 							?>
 							</td>
 
 							<td>
 							<?php 
-								echo esc_html_e('$0.00', 'rtwalwm-wp-wc-affiliate-program');
+								echo esc_html_e('$0.00', 'affiliaa-affiliate-program-with-mlm');
 							?>
 							</td>
 
 							<td>
 							<?php 
-								echo esc_html_e('$0.00', 'rtwalwm-wp-wc-affiliate-program');
+								echo esc_html_e('$0.00', 'affiliaa-affiliate-program-with-mlm');
 							?>
 							</td>
 						
@@ -161,16 +161,16 @@
 			<tfoot>
 			  	<tr>
 			    	<th></th>
-			    	<th><?php esc_html_e( 'ID', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Username', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Name', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Email', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Wp role', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Parent Id', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Parent Name', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Paid Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-					<th><?php esc_html_e( 'Unpaid Amount', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
-			    	<th><?php esc_html_e( 'Actions', 'rtwalwm-wp-wc-affiliate-program' ); ?></th>
+			    	<th><?php esc_html_e( 'ID', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Username', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Name', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Email', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Wp role', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Parent Id', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Parent Name', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Paid Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+					<th><?php esc_html_e( 'Unpaid Amount', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
+			    	<th><?php esc_html_e( 'Actions', 'affiliaa-affiliate-program-with-mlm' ); ?></th>
 			  	</tr>
 		  	</tfoot>
 		</table>

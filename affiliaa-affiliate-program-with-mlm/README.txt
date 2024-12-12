@@ -5,7 +5,7 @@ Tags: affiliate, affiliate marketing, affiliates, affiliate program, woocommerce
 Requires at least: 3.0.1
 Tested up to: 6.7.1
 Requires PHP: 5.6.2
-Stable tag: 3.2.2
+Stable tag: 3.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,8 @@ One of the benefits of Affiliate marketing is paying commission for referred bus
 
 With our Plugin, you can run an AFFILIATE SYSTEM with MLM (Multilevel marketing) on your web store. By rewarding your Affiliates with different types of commissions and bonuses. By this, you will surely reach the next level with INCREASED SALES. Your products will be marketed through different SOCIAL MEDIA platforms. As a result, your site will get HIGHER TRAFFIC with all these features. You just have to install our plugin and sit back and relax with your friends/family.
 
+https://www.youtube.com/watch?v=nGp3miBE6wg
+
 ### Multi Level Marketing ( MLM )
 
 You can choose any MLM Matrix from Binary, Forced Matrix and Unilevel and start earning money through your MLM members. You can set a number of child's and levels of the MLM chain. You can even set a commission for each level. Add a multilevel marketing strategy to your affiliate program so that your affiliate will generate new leads which will increase the sale amount even furthermore with the help of 3 Multi level Marketing Matrix - Binary MLM, Forced Matrix MLM, Unilevel MLM.
@@ -52,8 +54,6 @@ You can choose any MLM Matrix from Binary, Forced Matrix and Unilevel and start 
 * **[Premium]** The ability to expand your affiliate marketing with MLM, level base marketing, Direct bank Payment, Create Custom Banner and much more useful feature.
 * To explore more about premium version, [visit here](https://woocommerce.com/products/affiliate-and-referral/)
 * And for their extensions click here [Social Media Share Addon](https://redefiningtheweb.com/product/social-media-share-addon-for-affiliate-program/1548)
-
-https://www.youtube.com/watch?v=nGp3miBE6wg
 
 ### Premium Features 💪
 
@@ -150,9 +150,12 @@ The manual installation method involves downloading our Affilia Lite - Affiliate
 
 == Changelog ==
 
-= 3.2.2 - 2024-11-28 =
+= 3.2.3 - 2024-12-12 =
+* Fixed the issue of commission generation for latest varson of WooCommerce
+* Minor bug fixes and routine check
+
+= 3.2.2 - 2024-11-27 =
 * Bug fixed in the dashboard tab of the admin panel
-* Minor bug fixes
 
 = 3.2.1 - 2024-10-07 =
 * Compatibility check with latest version of PHP, WordPress and WooCommerce

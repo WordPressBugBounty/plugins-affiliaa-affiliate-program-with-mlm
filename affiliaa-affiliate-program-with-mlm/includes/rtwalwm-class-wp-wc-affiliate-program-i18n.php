@@ -35,7 +35,7 @@ class Rtwalwm_Wp_Wc_Affiliate_Program_i18n {
 	public function rtwalwm_load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'rtwalwm-wp-wc-affiliate-program',
+			'affiliaa-affiliate-program-with-mlm',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
